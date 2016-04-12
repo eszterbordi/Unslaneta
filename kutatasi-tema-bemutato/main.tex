@@ -12,69 +12,39 @@
 
 \documentclass{beamer}
 
+\usepackage{docmute}
+
+\usepackage[utf8]{inputenc}
+\usepackage[hungarian]{babel}
+
 % There are many different themes available for Beamer. A comprehensive
 % list with examples is given here:
 % http://deic.uab.es/~iblanes/beamer_gallery/index_by_theme.html
 % You can uncomment the themes below if you would like to use a different
 % one:
-%\usetheme{AnnArbor}
-%\usetheme{Antibes}
-%\usetheme{Bergen}
-%\usetheme{Berkeley}
-%\usetheme{Berlin}
-%\usetheme{Boadilla}
-%\usetheme{boxes}
-%\usetheme{CambridgeUS}
-%\usetheme{Copenhagen}
-%\usetheme{Darmstadt}
-%\usetheme{default}
-%\usetheme{Frankfurt}
-%\usetheme{Goettingen}
-\usetheme{Hannover}
-%\usetheme{Ilmenau}
-%\usetheme{JuanLesPins}
-%\usetheme{Luebeck}
-%\usetheme{Madrid}
-%\usetheme{Malmoe}
-%\usetheme{Marburg}
-%\usetheme{Montpellier}
-%\usetheme{PaloAlto}
-%\usetheme{Pittsburgh}
-%\usetheme{Rochester}
-%\usetheme{Singapore}
-%\usetheme{Szeged}
-%\usetheme{Warsaw}
 
-\title{Presentation Title}
+\usetheme{Hannover}
+
+
+\title{Kell ide egy cím}
 
 % A subtitle is optional and this may be deleted
-\subtitle{Optional Subtitle}
+\subtitle{A statisztikus gépi fordítás hatékonyságának jelentés egyértelműsítéssel történő javítása}
 
-\author{F.~Author\inst{1} \and S.~Another\inst{2}}
+\author{E.~Bordi, T.~Both, Sz.~Pável, Cs.~Sándor, A.~Szász}
 % - Give the names in the same order as the appear in the paper.
 % - Use the \inst{?} command only if the authors have different
 %   affiliation.
 
-\institute[Universities of Somewhere and Elsewhere] % (optional, but mostly needed)
-{
-  \inst{1}%
-  Department of Computer Science\\
-  University of Somewhere
-  \and
-  \inst{2}%
-  Department of Theoretical Philosophy\\
-  University of Elsewhere}
+\institute[Babe\c{s}-Bolyai Tudományegyetem] % (optional, but mostly needed)
+{Babe\c{s}-Bolyai Tudományegyetem, Matematika és Informatika Kar, Kolozsvár}
 % - Use the \inst command only if there are several affiliations.
 % - Keep it simple, no one is interested in your street address.
 
-\date{Conference Name, 2013}
+\date{2016 április 15.}
 % - Either use conference name or its abbreviation.
 % - Not really informative to the audience, more for people (including
-%   yourself) who are reading the slides online
-
-\subject{Theoretical Computer Science}
-% This is only inserted into the PDF information catalog. Can be left
-% out. 
+%   yourself) who are reading the slides online 
 
 % If you have a file called "university-logo-filename.xxx", where xxx
 % is a graphic format that can be processed by latex or pdflatex,
@@ -99,10 +69,8 @@
   \titlepage
 \end{frame}
 
-\begin{frame}{Outline}
-  \tableofcontents
-  % You might wish to add the option [pausesections]
-\end{frame}
+% Sections are stored in separate .tex files
+\input{megvalositando_anyagok}
 
 % Section and subsections will appear in the presentation overview
 % and table of contents.
