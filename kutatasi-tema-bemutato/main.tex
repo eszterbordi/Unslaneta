@@ -57,7 +57,7 @@
 % the beginning of each subsection:
 \AtBeginSubsection[]
 {
-  \begin{frame}<beamer>{Outline}
+  \begin{frame}<beamer>{Tartalom}
     \tableofcontents[currentsection,currentsubsection]
   \end{frame}
 }
@@ -65,11 +65,10 @@
 % Let's get started
 \begin{document}
 
-\begin{frame}
-  \titlepage
-\end{frame}
 
 % Sections are stored in separate .tex files
+\input{cimoldal}
+\input{tartalom}
 \input{megvalositando_anyagok}
 
 % Section and subsections will appear in the presentation overview
