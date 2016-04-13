@@ -1,19 +1,86 @@
+\section{Létező megoldások}
 \begin{frame}{Létező megoldások}
+\framesubtitle{Statistical machine translation}
+	
+	\begin{figure}[t]
+		\includegraphics[width=1\linewidth]{images/smt_translation}
+ 	\end{figure}
+
+	\begin{equation}
+		P(e|f) = \frac{P(e)P(f|e)}{P(f)}
+	\end{equation}
+	\begin{equation}
+		T(e) = \hat{e} = argmax_e P(e|f) = argmax_e P(e) P(f|e)
+	\end{equation}
+	
+	
+\end{frame}
+
+\begin{frame}{Létező megoldások}
+\framesubtitle{Statistical machine translation}
+
+	\begin{align*}
+		T(e) = \hat{e} = argmax_e P(e) P(f|e)
+	\end{align*}
 	
 	\begin{itemize}
+
 		\item
-			SMT rövid bemutatása - ez lesz legalább 1 dia ÁLTALÁNOSAN
+			nyelvi modell: $P(e)$
+			\begin{itemize}
+				\item
+					folytonosságot biztosít a célnyelvben
+			\end{itemize}
+
 		\item
-			mik a hátrányok-előnyök
+			fordítási modell: $P(f|e)$
+				\begin{itemize}
+					\item
+			 			lexikális megfeleltetés a nyelvek között
+			 		\item
+			 			szó alapú (word based) modellek \cite{Brown:1990} \cite{Berger:1994}
+			 		\item
+			 			kifejezés alapú (phrase based) modellek \cite{Och99improvedalignment} \cite{Marcu:2002}
+			 	\end{itemize}
 		\item
-			milyen próbálkozások vannak a javítására
-		\begin{itemize}
-			\item
-				főbb próbálkozások bemutatása - lehetőleg olyan, ami kapcsolódik a mienkhez
-			\item
-				ezekről egy rövid ismertető, hogy mi mennyire hatékony
-		\end{itemize}
+			argmax: $argmax_e$
+			\begin{itemize}
+				\item
+					keresés
+			\end{itemize}
+	\end{itemize}
+	
+	
+\end{frame}
+
+\begin{frame}{Létező megoldások}
+	\framesubtitle{Előnyök, hátrányok}
+	
+	Szó alapú vs kifejezés alapú modellek: 
+	\begin{itemize}
+		\item
+			szó alapú modell: nehéz a tokeninzálás \cite{Lopez07asurvey}
+		\item
+			kifejezés alapú modell pontosabb komplex nyelveknél \cite{Lopez07asurvey}
+		
+	\end{itemize}
+	
+	Hátrányai ezeknek a rendszereknek:
+	\begin{itemize}
+		\item
+			Még mindig nem elég pontosak az SMT rendszerek a WSD-hez képest \cite{Carpuat_evaluatingthe}
 	\end{itemize}
 	
 \end{frame}
+
+
+\begin{frame}{Létező megoldások}
+	\framesubtitle{Aktuális próbálkozások a javításra}
+	
+	\begin{itemize}
+		\item
+			WSD beépítése az SMT-be: \cite{carpuat2005} \cite{Carpuat07improvingstatistical}
+	\end{itemize}
+\end{frame}
+
 

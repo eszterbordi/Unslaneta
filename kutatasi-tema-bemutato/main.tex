@@ -64,10 +64,7 @@
 \input{tartalom}
 \section{Motiváció}
 \input{motivacio}
-
-\section{Létező megoldások}
 \input{letezo_megoldasok}
-
 \section{Kutatási terv}
 \input{lepesek}
 \input{csapat_hozzajarulas}
@@ -164,35 +161,10 @@
 %\end{frame}
 
 
-
-% All of the following is optional and typically not needed. 
-\appendix
-\section<presentation>*{\appendixname}
-\subsection<presentation>*{Irodalomjegyzék}
-
 \begin{frame}[allowframebreaks]
-  \frametitle<presentation>{Irodalomjegyzék}
-    
-  \begin{thebibliography}{10}
-    
-  \beamertemplatebookbibitems
-  % Start with overview books.
-
-  \bibitem{Author1990}
-    A.~Author.
-    \newblock {\em Handbook of Everything}.
-    \newblock Some Press, 1990.
- 
-    
-  \beamertemplatearticlebibitems
-  % Followed by interesting articles. Keep the list short. 
-
-  \bibitem{Someone2000}
-    S.~Someone.
-    \newblock On this and that.
-    \newblock {\em Journal of This and That}, 2(1):50--100,
-    2000.
-  \end{thebibliography}
+        \frametitle{Könyvészet}
+        \bibliographystyle{amsalpha}
+        \bibliography{referencia}
 \end{frame}
 
 \end{document}
