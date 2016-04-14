@@ -8,12 +8,12 @@
 		\begin{enumerate}
 			\item Egyik legnagyobb létező adathalmaz
 			\item Több nyelven elérhető
-			\item A cikkek címei felhasználhatóak, mint conceptek
+			\item A cikkek címei concept-ként való felhasználása
 		\end{enumerate}
 		
 		\item WSD rendszer integrálása a létező SMT rendszerekbe
 		\begin{enumerate}
-			\item Statisztikai modellek nem veszik figyelembe többértelmű szavakat
+			\item Statisztikai modellek nem veszik figyelembe a  többértelmű szavakat
 			\item A fordítás pontossága nagyban növelhető lenne ezen problémák megoldásával
 		\end{enumerate}
 		
@@ -31,8 +31,8 @@
 		\begin{enumerate}
 			\item Invertált index felépítése minden nyelv számára	
 			\begin{itemize}
-				\item Minden szóhoz hozzárendelünk concepteket és a hozzájuk tartozó súlyt
-				\item A conceptek az angol Wikipedia címek
+				\item Minden szóhoz hozzárendelünk concept-eket és a hozzájuk tartozó súlyt
+				\item A concept-ek az angol Wikipedia címek
 				\item Súlyozáshoz használhatjuk például a tf-idf súlyozást
 			\end{itemize}			
 			
@@ -53,8 +53,8 @@
 		
 		\item Súlyozott concept vektor hozzárendelése a fordítandó és SMT által fordított szöveghez
 		\begin{itemize}
-			\item Szöveg ábrázolása, mint szavak vektora
-			\item Conceptek megfelelő súllyal történő hozzárendelése minden szóhoz
+			\item Szöveg szavak vektoraként való ábrázolása 
+			\item Concept-ek megfelelő súllyal történő hozzárendelése minden szóhoz
 			\item Ősszesített súlyozott concept lista felépítése a szöveghez
 		\end{itemize}
 		
@@ -74,11 +74,11 @@
 	\begin{enumerate}
 		\restorecounter	
 	
-		\item Szemantikai hasonlóság meghatározza a fordítandó és célszöveg között
+		\item A szemantikai hasonlóság meghatározza a fordítandó és célszöveg között
 		\begin{itemize}
-			\item A fordítandó és célszöveghez felépítjük a concept vektorokat
+			\item A fordítandó- és célszöveghez felépítjük a concept vektorokat
 			\item A hasonlóság vizsgálatát a vektorok összehasonlítása jelenti
-			\item A hasonlóság metrika lehet például a gyakran használt cos távolság
+			\item A hasonlósági metrika lehet például a gyakran használt cos-távolság
 		\end{itemize}
 	
 		\begin{figure}[t]
