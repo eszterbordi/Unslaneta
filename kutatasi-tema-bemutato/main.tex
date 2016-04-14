@@ -32,7 +32,7 @@
 % A subtitle is optional and this may be deleted
 \subtitle{A statisztikus gépi fordítás hatékonyságának jelentés egyértelműsítéssel történő javítása}
 
-\author{Bordi Eszter, Both Tibor, Pável Szabolcs, Sándor Csanád, Szász Adorján}
+\author{E.~Bordi, T.~Both, Sz.~Pável, Cs.~Sándor, A.~Szász}
 % - Give the names in the same order as the appear in the paper.
 % - Use the \inst{?} command only if the authors have different
 %   affiliation.
@@ -64,7 +64,6 @@
 \section{Motiváció}
 \input{motivacio}
 
-\section{Létező megoldások}
 \input{letezo_megoldasok}
 
 \section{Kutatási terv}
@@ -169,29 +168,11 @@
 \section<presentation>*{\appendixname}
 \subsection<presentation>*{Irodalomjegyzék}
 
+
 \begin{frame}[allowframebreaks]
-  \frametitle<presentation>{Irodalomjegyzék}
-    
-  \begin{thebibliography}{10}
-    
-  \beamertemplatebookbibitems
-  % Start with overview books.
-
-  \bibitem{Author1990}
-    A.~Author.
-    \newblock {\em Handbook of Everything}.
-    \newblock Some Press, 1990.
- 
-    
-  \beamertemplatearticlebibitems
-  % Followed by interesting articles. Keep the list short. 
-
-  \bibitem{Someone2000}
-    S.~Someone.
-    \newblock On this and that.
-    \newblock {\em Journal of This and That}, 2(1):50--100,
-    2000.
-  \end{thebibliography}
+        \frametitle{Irodalomjegyzék}
+        \bibliographystyle{amsalpha}
+        \bibliography{referencia}
 \end{frame}
 
 \end{document}
