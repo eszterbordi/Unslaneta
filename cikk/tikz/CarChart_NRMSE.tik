@@ -1,0 +1,17 @@
+\begin{tikzpicture}[scale=0.35]
+
+      \newcommand\Step{36}      
+
+      \onechartcolumn{1}{(1)}{0.14988}{color1}  %GP
+      \onechartcolumn{2}{(2)}{0.12228}{color3}  %SIMEXGP
+      \onechartcolumn{3}{(3)}{0.15087}{color4}  %NIGP
+      \onechartcolumn{4}{(4)}{0.15047}{color7}  %GPH
+      \onechartcolumn{5}{(5)}{0.15203}{color8}  %VHGP
+      \drawstep{0}
+      \drawstep{0.07}
+      \drawstep{0.14}
+
+      
+      \drawaxes{7}
+
+\end{tikzpicture}

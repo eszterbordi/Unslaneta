@@ -1,0 +1,22 @@
+\begin{tikzpicture}[scale=0.27,>=latex]
+
+      \newcommand\Step{450}      
+
+      \onechartcolumn{1}{(1)}{0.0118}{color1}
+      \onechartcolumn{2}{(2)}{0.0119}{color2}
+      \onechartcolumn{3}{(3)}{0.0119}{color3}
+      \onechartcolumn{4}{(4)}{0.0117}{color4}
+      \onechartcolumn{5}{(5)}{0.0119}{color5}
+      \onechartcolumn{6}{(6)}{0.0125}{color6}
+      \onechartcolumn{7}{(7)}{0.0124}{color7}
+      \onechartcolumn{8}{(8)}{0.0128}{color8}
+
+      \drawstep{0}
+      \drawstep{0.006}
+      \drawstep{0.012}
+
+%      \node[above=0.3cm] at (1.8, 4.5) {\tiny{MSE}};
+
+      \drawaxes{11}
+
+\end{tikzpicture}

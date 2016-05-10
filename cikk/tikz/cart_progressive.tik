@@ -1,0 +1,34 @@
+\begin{tikzpicture}[xscale=2.4,yscale=13]
+  
+  \drawaxels{0.2}{0.2}{2.0}{0.04}
+
+  \begin{scope}[line width=1pt,color=color1]
+    \draw plot[smooth] file {tikz/GP_prog_hc.dat};
+	\end{scope}
+	
+	\begin{scope}[line width=1pt,color=color3]
+	\draw plot[smooth] file {tikz/SIMEXGP_prog_hc.dat};
+	\end{scope}
+	
+	\begin{scope}[line width=1pt,color=color4]
+	\draw plot[smooth] file {tikz/NIGP_prog_hct.dat};
+	\end{scope}
+	
+	\begin{scope}[line width=1pt,color=color7]
+	\draw plot[smooth] file {tikz/GPH_prog_hc.dat};
+	\end{scope}
+	
+	\begin{scope}[line width=1pt,color=color8]
+	\draw plot[smooth] file {tikz/VHGP_prog_hc.dat};
+	\end{scope}
+		
+
+      \draw[color=black] (0.19, 0.06) -- (0.21, 0.06) node [xshift=-8pt] {\tiny{$0.06$}};
+      \draw[color=black] (0.19, 0.12) -- (0.21, 0.12) node [xshift=-8pt] {\tiny{$0.12$}};
+      \draw[color=black] (0.19, 0.18) -- (0.21, 0.18) node [xshift=-8pt] {\tiny{$0.18$}};
+
+      \foreach \x in {0.2, 0.4, 0.6, 0.8, 1.0, 1.2, 1.4, 1.6, 1.8, 2.0}
+	\node at (\x, 0.03) {\tiny$\x$};
+
+
+\end{tikzpicture}

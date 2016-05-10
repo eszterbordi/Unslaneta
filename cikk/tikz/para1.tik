@@ -1,0 +1,22 @@
+\begin{tikzpicture}[scale=0.27,>=latex]
+
+      \newcommand\Step{69}      
+
+      \onechartcolumn{1}{(1)}{0.0808}{color1}
+      \onechartcolumn{2}{(2)}{0.0818}{color2}
+      \onechartcolumn{3}{(3)}{0.0855}{color3}
+      \onechartcolumn{4}{(4)}{0.0785}{color4}
+      \onechartcolumn{5}{(5)}{0.0730}{color5}
+      \onechartcolumn{6}{(6)}{0.0785}{color6}
+      \onechartcolumn{7}{(7)}{0.0774}{color7}
+      \onechartcolumn{8}{(8)}{0.0798}{color8}
+
+      \drawstep{0}
+      \drawstep{0.04}
+      \drawstep{0.08}
+
+%      \node[above=0.3cm] at (1.8, 4.5) {\tiny{MSE}};
+
+      \drawaxes{11}
+
+\end{tikzpicture}

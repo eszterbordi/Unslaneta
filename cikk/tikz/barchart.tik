@@ -1,0 +1,22 @@
+%\tikzset{ecmlaxis/.style={%
+%    color=black,%
+%    semithick,%
+%    -%
+%  }
+%}
+\newcommand\onechartcolumn[4]{%
+
+  \fill[#4] (#1*1.2-0.5, #3*\Step) rectangle (#1*1.2+0.5, 0)
+  node [anchor=north east, inner sep=0pt, %
+    rectangle,outer sep=0pt,yshift=-2pt] {\tiny{$\vc{#2}$}};	
+}
+
+\newcommand\drawstep[1]{%
+  \draw[ecmlaxis] (.1,#1*\Step) -- (-.1,#1*\Step)
+  node[rectangle,inner sep=0pt, outer sep=1pt, left] {\tiny{$#1$}};
+}
+
+\newcommand\drawaxes[1]{%
+  \draw[ecmlaxis] (-.2,0) -- (#1,0);
+  \draw[ecmlaxis,->] (0,-0.2) -- (0,6);
+}

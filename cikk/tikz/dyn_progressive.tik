@@ -1,0 +1,6 @@
+    \newcommand\drawaxels[4]
+    {
+	  \draw[xstep=0.2,ystep=0.1,brown!50!white,very thin] (#1,#2 ) grid (#3, #4);
+	  \draw[->,color=black] (#1,#4) -- (#3,#4);
+	  \draw[->,color=black] (#1,#4) -- (#1,#2);    	  
+    }

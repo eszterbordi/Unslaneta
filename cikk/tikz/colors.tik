@@ -1,0 +1,23 @@
+
+% \xdefinecolor{color1}{RGB}{0, 0, 0}
+% \xdefinecolor{color2}{RGB}{237, 45, 46}
+% \xdefinecolor{color3}{RGB}{0, 140, 71}
+% \xdefinecolor{color4}{RGB}{24, 89, 169}
+% \xdefinecolor{color5}{RGB}{161, 29, 32}
+% \xdefinecolor{color6}{RGB}{102, 44, 145}
+% \xdefinecolor{color7}{RGB}{243, 125, 34}
+% \xdefinecolor{color8}{RGB}{179, 56, 147}
+
+
+\xdefinecolor{color1}{RGB}{144, 144, 144}
+\xdefinecolor{color2}{RGB}{241, 89, 95}
+\xdefinecolor{color3}{RGB}{121, 195, 106}
+\xdefinecolor{color4}{RGB}{89, 154, 211}
+\xdefinecolor{color5}{RGB}{205, 112, 88}
+\xdefinecolor{color6}{RGB}{158, 102, 171}
+\xdefinecolor{color7}{RGB}{249, 166, 90}
+\xdefinecolor{color8}{RGB}{215, 127, 179}
+\xdefinecolor{colorBlack}{RGB}{0,0,0}
+\xdefinecolor{colorRed}{RGB}{255, 60, 0}
+\xdefinecolor{colorDarkGreen}{RGB}{0, 150, 40}
+\xdefinecolor{colorLightGreen}{RGB}{122, 231, 188}

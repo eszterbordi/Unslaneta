@@ -1,0 +1,127 @@
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+\usepackage[latin2]{inputenc}
+\usepackage{amsthm,amssymb,amsmath,array}
+
+\usepackage{euler}
+\usepackage{palatino}
+
+\usepackage{sectsty}
+\usepackage{titlesec}
+\usepackage[blocks]{authblk}
+
+\usepackage[truedimen,
+            a4paper,
+            centering,
+            ]{geometry}
+
+\usepackage[square]{natbib}
+
+%% New commands/redefinitions:
+\newcommand{\Title}[2]{\title{\raggedright{\Huge #1} \\ \centering{\large -- #2 --} }}
+\newcommand{\Author}[2]{\author{\hbox{{\bf #1}, {\tt #2}\hfill}\ }}
+\renewcommand\Authsep{\authorcr}
+\renewcommand\Authand{\authorcr}
+\renewcommand\Authands{\authorcr}
+
+\renewcommand{\cite}{\protect\citep}
+\newcommand{\citeN}{\protect\citet}
+
+%% Stuff:
+\def\defeq{\mathrel {\lower 1pt\hbox{\smash{$\buildrel \hbox{{\tiny\textup{def}}}\over =$}}}}
+\newenvironment{important}[1]{{\bf #1. }\begin{itshape}}{\end{itshape}}
+
+\newcommand{\Matlab}{{\sc Matlab}}
+\newcommand{\cov}{\ensuremath{\mathrm{cov}}}
+\newcommand{\Cov}{\ensuremath{\mathrm{\Sigma}}}
+
+%% Bibliography:
+\bibliographystyle{abbrvnat}
+
+%%\vc:
+% first line is used where there are NO bold fonts to use in MATH
+\newcommand{\vc}[1]{{\ensuremath{\pmb { #1 } }}}
+
+%% BOLDS
+\newcommand{\NS}{\negthickspace}
+\newcommand{\balpha}{\vc{\alpha}}
+\newcommand{\bbeta}{\vc{\beta}}
+\newcommand{\bdelta}{\vc{\delta}}
+\newcommand{\bsigma}{\vc{\sigma}}
+\newcommand{\btheta}{\vc{\theta}}
+\newcommand{\bTheta}{\vc{\Theta}}
+\newcommand{\bA}{\vc{A}}
+\newcommand{\ba}{\vc{a}}
+\newcommand{\uba}{\underline{\ba}}
+\newcommand{\bb}{\vc{b}}
+\newcommand{\bB}{\vc{B}}
+\newcommand{\bc}{\vc{c}}
+\newcommand{\bC}{\vc{C}}
+\newcommand{\bchi}{\vc{\chi}}
+\newcommand{\bd}{\vc{d}}
+\newcommand{\bD}{\vc{D}}
+\newcommand{\be}{\vc{e}}
+\newcommand{\bE}{\vc{E}} %%bz
+\newcommand{\bF}{\vc{F}}
+\newcommand{\bbf}{\vc{f}}
+\newcommand{\ubf}{\underline{\bbf}}
+\newcommand{\bg}{\vc{g}}
+\newcommand{\bG}{\vc{G}}
+\newcommand{\bgamma}{\vc{\gamma}}
+\newcommand{\bh}{\vc{h}}
+\newcommand{\bH}{\vc{H}}
+\newcommand{\bI}{\vc{I}}
+\newcommand{\bi}{\vc{i}}
+\newcommand{\bj}{\vc{j}}
+\newcommand{\bJ}{\vc{J}}
+\newcommand{\bK}{\vc{K}}
+\newcommand{\bk}{\vc{k}}
+\newcommand{\bl}{\vc{l}} %%bz
+\newcommand{\bL}{\vc{L}} %%bz
+\newcommand{\bm}{\vc{m}}
+\newcommand{\bn}{\vc{n}}
+\newcommand{\bLambda}{\vc{\Lambda}}
+\newcommand{\bM}{\vc{M}}
+\newcommand{\bmu}{\vc{\mu}}
+\newcommand{\bomega}{\vc{\omega}}
+\newcommand{\bOmega}{\vc{\Omega}}
+\newcommand{\bO}{\vc{O}}
+\newcommand{\bp}{\vc{p}}
+\newcommand{\bP}{\vc{P}}
+\newcommand{\bPhi}{\vc{\Phi}}
+\newcommand{\bphi}{\vc{\phi}}
+\newcommand{\bvarphi}{\vc{\varphi}}
+\newcommand{\bpsi}{\vc{\psi}}
+\newcommand{\bPsi}{\vc{\Psi}}
+\newcommand{\uPhi}{\underline{\bPhi}}
+\newcommand{\bq}{\vc{q}}
+\newcommand{\bQ}{\vc{Q}}
+\newcommand{\br}{\vc{r}}
+\newcommand{\bR}{\vc{R}}
+\newcommand{\bT}{\vc{T}}
+\newcommand{\bs}{\vc{s}}
+\newcommand{\ubs}{\underline{\vc{s}}}
+\newcommand{\bS}{\vc{S}}
+\newcommand{\bSigma}{\vc{\Sigma}}
+\newcommand{\bt}{\vc{t}}
+\newcommand{\bu}{\vc{u}}
+\newcommand{\bU}{\vc{U}}
+\newcommand{\bv}{\vc{v}}
+\newcommand{\bV}{\vc{V}}
+\newcommand{\bw}{\vc{w}}
+\newcommand{\bW}{\vc{W}}
+\newcommand{\bx}{\vc{x}}
+\newcommand{\bX}{\vc{X}}
+\newcommand{\bxi}{\vc{\xi}}
+\newcommand{\by}{\vc{y}}
+\newcommand{\bY}{\vc{Y}} %%bz
+\newcommand{\uby}{\underline{\by}}
+\newcommand{\bZ}{\vc{Z}}
+\newcommand{\bz}{\vc{z}}
+\newcommand{\ubz}{\underline{\bz}}
+\newcommand{\bzero}{\vc{0}}
+\newcommand{\bone}{\vc{1}}
+\newcommand{\params}[1]{\btheta_{#1},C_{#1}}
+\newcommand{\Qed}{{\raggedleft\hfill$\Box$}}
+

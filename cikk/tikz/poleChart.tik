@@ -1,0 +1,28 @@
+\begin{tikzpicture}[scale=0.41]
+
+      \input{colors.tik}
+
+      \newcommand\Step{180}      
+
+      \input{barchart.tik}
+
+
+      \onechartcolumn{1}{(1)}{0.0295}{color1}
+      \onechartcolumn{2}{(2)}{0.0299}{color2}
+      \onechartcolumn{3}{(3)}{0.0299}{color3}
+      \onechartcolumn{4}{(4)}{0.0291}{color4}
+      %\onechartcolumn{5}{(5)}{0.0319}{color5}
+      %\onechartcolumn{6}{(6)}{0.0245}{color6}
+      %\onechartcolumn{7}{(7)}{0.0295}{color7}
+      %\onechartcolumn{8}{(8)}{0.0295}{color8}
+
+
+      \drawstep{0}
+      \drawstep{0.015}
+      \drawstep{0.030}
+
+      \node[rotate=90, above=0.8cm] at (1.8, 4.5) {\tiny{NRMSE}};
+
+      \drawaxes{}
+
+\end{tikzpicture}

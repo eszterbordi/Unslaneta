@@ -1,0 +1,65 @@
+
+% TIKZ styles
+\tikzset{ecmlaxis/.style={%
+    color=black,%
+    semithick,%
+    -%
+  },
+  illaxis/.style={%
+    color=black!60!white,%
+    thin,%
+    ->%
+  },
+  illmainline/.style={%
+    line width=1.7pt,%
+    color=colorDarkGreen
+  }
+}
+
+% COLORS
+
+% \xdefinecolor{color1}{RGB}{0, 0, 0}
+% \xdefinecolor{color2}{RGB}{237, 45, 46}
+% \xdefinecolor{color3}{RGB}{0, 140, 71}
+% \xdefinecolor{color4}{RGB}{24, 89, 169}
+% \xdefinecolor{color5}{RGB}{161, 29, 32}
+% \xdefinecolor{color6}{RGB}{102, 44, 145}
+% \xdefinecolor{color7}{RGB}{243, 125, 34}
+% \xdefinecolor{color8}{RGB}{179, 56, 147}
+
+\xdefinecolor{color1}{RGB}{144, 144, 144}
+\xdefinecolor{color2}{RGB}{241, 89, 95}
+\xdefinecolor{color3}{RGB}{121, 195, 106}
+\xdefinecolor{color4}{RGB}{89, 154, 211}
+\xdefinecolor{color5}{RGB}{205, 112, 88}
+\xdefinecolor{color6}{RGB}{158, 102, 171}
+\xdefinecolor{color7}{RGB}{249, 166, 90}
+\xdefinecolor{color8}{RGB}{215, 127, 179}
+\xdefinecolor{colorBlack}{RGB}{0,0,0}
+\xdefinecolor{colorRed}{RGB}{255, 60, 0}
+\xdefinecolor{colorDarkGreen}{RGB}{0, 150, 40}
+\xdefinecolor{colorLightGreen}{RGB}{122, 231, 188} 
+
+%% commands from barchart
+\newcommand\onechartcolumn[4]{%
+  \fill[#4] (#1*1.2-0.5, #3*\Step) rectangle (#1*1.2+0.5, 0) %
+  node [anchor=north east, inner sep=0pt, %
+      rectangle,outer sep=0pt,yshift=-2pt] {\tiny{#2}}; 
+}
+
+\newcommand\drawstep[1]{%
+  \draw[-,semithick,black] (.1,#1*\Step) -- (-.1,#1*\Step) %
+  node[rectangle,inner sep=0pt, outer sep=1pt, left] {\tiny{#1}};%
+}
+
+\newcommand\drawaxes[1]{%
+  \draw[-,semithick,black] (-.2,0) -- (#1,0);%
+  \draw[semithick,black,->] (0,-0.2) -- (0,6);%
+}
+
+\newcommand\drawaxels[4]%
+{%
+   \draw[xstep=0.2,ystep=0.1,brown!50!white,very thin] (#1,#2 ) grid (#3, #4);%
+   \draw[->,color=black] (#1,#4) -- (#3,#4);%
+   \draw[->,color=black] (#1,#4) -- (#1,#2);%
+}

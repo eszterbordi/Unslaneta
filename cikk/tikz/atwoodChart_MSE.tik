@@ -1,0 +1,18 @@
+\begin{tikzpicture}[scale=0.35,>=latex]
+      \newcommand\Step{3.0	}      
+
+      \onechartcolumn{1}{(1)}{1.0847}{color1}
+      \onechartcolumn{2}{(2)}{1.0387}{color2}
+      \onechartcolumn{3}{(3)}{1.7125}{color4}
+      \onechartcolumn{4}{(4)}{1.0873}{color7}
+      \onechartcolumn{5}{(5)}{0.9384}{color8}
+      \drawstep{0}
+      \drawstep{0.8}
+      \drawstep{1.6}
+
+
+      %\node[rotate=90, above=0.8cm] at (1.8, 4.5) {\tiny{MSE}};
+
+      \drawaxes{7}
+
+\end{tikzpicture}

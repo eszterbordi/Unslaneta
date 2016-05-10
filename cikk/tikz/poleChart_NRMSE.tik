@@ -1,0 +1,19 @@
+\begin{tikzpicture}[scale=0.35,>=latex]
+
+      \newcommand\Step{13}      
+
+      \onechartcolumn{1}{(1)}{0.42463}{color1}
+      \onechartcolumn{2}{(2)}{0.39713}{color3}
+      \onechartcolumn{3}{(3)}{0.43832}{color4}
+      \onechartcolumn{4}{(4)}{0.42753}{color7}
+      \onechartcolumn{5}{(5)}{0.43237}{color8}
+      \drawstep{0}
+      \drawstep{0.2}
+      \drawstep{0.4}
+
+
+      
+
+      \drawaxes{7}
+
+\end{tikzpicture}

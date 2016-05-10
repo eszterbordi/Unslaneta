@@ -1,0 +1,31 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{tikzpicture}[scale=1.2,framed, background rectangle/.style={double, rounded corners},>=latex,rectangle,inner sep=0pt, outer sep=0pt, minimum size=0pt]
+
+  \clip (-1.4,-0.15) rectangle (1.4, 2.35);
+  % draws the axis
+  \draw[illaxis] (0,-.15) -- (0,2.2)
+    node[left=0.05cm,at end, draw=none] {\tiny$y$};
+  \draw[illaxis] (-1.3,0) -- (1.3,0)%
+    node[above=0.05cm, at end, draw=none] {\tiny $x$};
+  % draws the car
+  \begin{scope}[color=colorBlack,fill=colorBlack]
+    \node[anchor=south,draw] (body) at (0,0.05) %
+      {\tikz \filldraw (0,0) rectangle (0.5,0.2);};
+    \node[right=0.02cm of body.south west,yshift=-0.025cm] %
+      {\tikz \filldraw (0,0) circle (.05cm);};
+    \node[left=0.02cm of body.south east,yshift=-0.025cm] %
+      {\tikz \filldraw (0,0) circle (.05cm);};
+  \end{scope}
+  \begin{scope}[]
+    \draw;
+  \end{scope}
+  % arc path
+  \node[shift={++(0,2.2cm)},anchor=north] (body.north) %
+  { \tikz\draw[radius=1.8cm,illmainline] %
+       (0,0) arc [start angle=55, end angle=125];%
+  };
+  % weight
+  \draw[line width=1pt,color=colorRed] (body.north) -- +(105:1.45cm)
+    node[circle,at end,anchor=mid,draw=none] {\tikz \filldraw[fill=colorRed] (0,0) circle (.075cm);};
+
+\end{tikzpicture}

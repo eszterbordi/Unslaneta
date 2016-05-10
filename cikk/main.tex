@@ -1,0 +1,120 @@
+\documentclass{ieee/IEEEtran5/IEEEtran}
+
+\usepackage{amssymb,amsmath,xspace}
+%\usepackage{algorithm}
+%\usepackage{algorithmic}
+%\usepackage{color}
+%\usepackage{wrapfig}
+\usepackage{subfigure}
+%\usepackage{graphicx}
+\usepackage{xfrac}
+%Tikz 
+\usepackage{pgf,tikz}
+\usetikzlibrary{shapes,arrows,positioning,backgrounds}
+
+\usepackage[utf8]{inputenc}
+\usepackage[hungarian]{babel}
+%! own styles
+\input{tikz/defs.tik}
+%------------------------
+\usepackage{paralist}
+%\usepackage{soul}
+\usepackage[numbers]{natbib}
+\usepackage{nccbbb}
+%\usepackage{multicol}
+%\usepackage{lipsum}
+
+\makeatletter
+\renewcommand\bibsection%
+{
+\section*{\refname
+\@mkboth{\MakeUppercase{\refname}}{\MakeUppercase{\refname}}}
+}
+\makeatother
+
+\definecolor{myTodoColor}{rgb}{1, 0, 0}
+\definecolor{linkCol}{rgb}{0.2, 0.0, 0.1}
+\definecolor{citeCol}{rgb}{0.3, 0.4, 0.5}
+\definecolor{urlCol} {rgb}{0.2, 0.2, 0.5}
+
+
+%% hyperref package with options!
+\usepackage[%
+    pdftex,   % which compiler... !dvips!?latex2html?
+    raiselinks=true, %
+    colorlinks=true, %
+    pdftitle={A statisztikus gépi fordítás hatékonyságának jelentés egyértelműsítéssel történő javítása}, %
+    pdfauthor={Bordi Eszter and Both Tibor and Pável Szabolcs and Sándor Csanád and Szász Adorján}, %
+    pdfkeywords={}, %
+    pdfsubject = {technical report}, %
+    plainpages=false,%
+    pdfpagelabels,%
+    citecolor=citeCol,urlcolor=urlCol,linkcolor=linkCol,unicode
+]{hyperref} % MUST be the LAST package included
+
+
+
+% \newcommand{\vc}[1]{{\ensuremath{\pmb{#1} }}}	
+\newcommand{\todo}{\textcolor{myTodoColor}}
+\newcommand{\eg}{\textit{e.g.}\xspace}
+\newcommand{\ie}{\textit{i.e.}\xspace}
+\newcommand{\gp}{\textsc{GP}\xspace}
+\newcommand{\nigp}{\textsc{nigp}\xspace}
+\newcommand{\mlhgp}{\textsc{mlhgp}\xspace}
+\newcommand{\vhgpr}{\textsc{vhgpr}\xspace}
+\newcommand{\gpa}{\textsc{GPa}\xspace}
+\newcommand{\gph}{\textsc{gp+h}\xspace}
+\newcommand{\simex}{\textsc{SimEx}\xspace}
+\newcommand{\simexgp}{\textsc{simexGP}\xspace}
+\newcommand{\simexgpq}{\textsc{sGP-Q}\xspace}
+\newcommand{\simexgpgp}{\textsc{sGP-GP}\xspace}
+\newcommand{\matlab}{\textsc{matlab}\xspace}
+\def\tr{\ensuremath{\mathop{\mathrm{tr}}}}
+
+
+%opening
+\title{A statisztikus gépi fordítás hatékonyságának jelentés egyértelműsítéssel történő javítása}
+\author{Bordi Eszter, \and Both Tibor, \and Pável Szabolcs, \and Sándor Csanád és \and Szász Adorján \\ Matematika és Informatika Kar, Babe\c{s}-Bolyai Tudományegyetem, Kogalniceanu 1, 400084 Cluj-Napoca, Romania \\ \textsc{bordieszter@gmail.com}, \textsc{bothtibi@yahoo.com}, \textsc{\{pszabolcs93,scsanad\}@gmail.com}, \textsc{szasz\_adorjan@yahoo.com}}
+%\thanks{a}
+% \institute{Faculty of Mathematics and Informatics, Babe\c{s}-Bolyai University, Kogalniceanu 1, 400084 Cluj-Napoca, Romania \\
+% \email{\{bboti,jakabh,csatol\}@cs.ubbcluj.ro}}
+
+\newcommand{\vc}[1]{{\ensuremath{\pmb { #1 } }}}
+
+\begin{document}
+
+\maketitle
+
+\input{abstract}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{introduction}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{model_definition}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{related_work}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{results}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{conclusions}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibliographystyle{splncsnat}
+% \bibliographystyle{IEEEtran}
+
+\bibliography{main}
+
+\end{document}

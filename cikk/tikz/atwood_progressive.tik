@@ -1,0 +1,35 @@
+\begin{tikzpicture}[xscale=3,yscale=8]
+
+  \drawaxels{0.2}{1.1}{2.6}{0.8}
+
+  \begin{scope}[line width=1pt,color=color1,yshift=-.05cm]
+    \draw plot[smooth] file {tikz/GP_prog_at.dat};
+	\end{scope}
+	
+	\begin{scope}[line width=1pt,color=color3,yshift=-.05cm]
+	\draw plot[smooth] file {tikz/SIMEXGP_prog_at.dat};
+	\end{scope}
+	
+	\begin{scope}[line width=1pt,color=color4,yshift=-.05cm]
+	\draw plot[smooth] file {tikz/NIGP_prog_at.dat};
+	\end{scope}
+	
+	\begin{scope}[line width=1pt,color=color7,yshift=-.05cm]
+	\draw plot[smooth] file {tikz/GPH_prog_at.dat};
+	\end{scope}
+	
+	\begin{scope}[line width=1pt,color=color8,yshift=-.05cm]
+	\draw plot[smooth] file {tikz/VHGP_prog_at.dat};
+	\end{scope}
+		
+
+      \draw[color=black] (0.19, 1.0) -- (0.21, 1.0) node [xshift=-8pt] {\tiny{$1.0$}};
+      \draw[color=black] (0.19, 0.9) -- (0.21, 0.9) node [xshift=-8pt] {\tiny{$0.9$}};
+      
+      \foreach \x in {0.2, 0.4, 0.6, 0.8, 1.0, 1.2, 1.4, 1.6, 1.8, 2.0, 2.2, 2.4, 2.6}
+	\node at (\x, 0.78) {\tiny$\x$};
+
+	%\drawaxes{}
+	
+
+\end{tikzpicture}
