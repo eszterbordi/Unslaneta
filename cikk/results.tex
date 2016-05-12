@@ -1,1 +1,87 @@
-\section{Eredmények} \label{sec:results}
+\section{Kísérletek és Eredmények} \label{sec:results}
+
+\subsection{Adathalmazok}
+
+Az \cite{Gabrilovich:2007:CSR}-ben említett Wikipedia alapú adathalmaz\footnote{Concept Wikipedia Adathalmaz (2007),  \url{http://www.lscom.org/datasets}} a népszerű webes enciklopédia 2006. március 26-i állapotát tükrözi. Az XML-formátumú Wikipedia-másolat feldolgozása, utólagos szűrések, valamint nyelvfeldolgozási módszerek alkalmazása után 400,000 fogalmat és 2,800,000 URL-t tartalmazó hierarhia született. 
+
+A OpenSubtitle\footnote{OpenSubtitle, \url{http://www.opensubtitles.org/}} weboldal tulajdonosai teljes adatbázisukat hozzáférhetővé tették, ez 308,000 állományt jelentett, 18,900 film feliratát összesen 59 különböző nyelven (2006. júliusi állapot). Az OPUS filmfelirat-korpusza \cite{Tiedemann:RANLP5} egyirányú párhuzamos korpusz, mely a forrásnyelvi (angol) szövegeket és azok 30 célnyelven meglevő fordításait tartalmazza. A bekezdés-, mondat- vagy szószinten párhuzamosított szövegek igencsak alkalmasak gépi fordítás esetén.
+
+\begin{table}[h!]
+\centering
+\normalsize
+ \begin{tabular}{| c | c |} 
+ \hline\hline
+ Állományok száma: & 20,400 \\ [1ex]
+ 
+ Tokenek száma: & 149.44M \\ [1ex]
+ 
+  Mondatrészletek száma: & 22.27M  \\ [1ex] 
+ \hline
+ \end{tabular}
+ \caption{Az OPUS tulajdonságai}
+\end{table}
+
+A statisztikus gépi fordítás esetén az OPUS adathalmaz került felhasználásra, a Wikipedia alapú adathalmaz pedig a jelentés-egyértelműsítés esetén volt hasznos.
+
+\subsection{Kiértékelési metrikák}
+
+Jelen módszer és létező statisztikus gépi fordítással kapcsolatos algoritmusok összevetése a BLEU score (BiLingual Evaluation Understudy), a WER (Word Error Rate), a METEOR értéke (Metric for Evaluation of Translation with Explicit ORdering), valamint az F-mérték alapján történt.
+
+
+\subsubsection{BLEU (BiLingual Evaluation Understudy)}
+Lényege, hogy a vizsgált rendszer által lefordított mondat kifejezéseit keresi a referenciamondatban. Megoldást kínál a szavak sorrendjéből adódó probléma kezelésére is, hiszen figyelembe veszi a több szóból álló frázisok referenciafordítással való egyezéseit. Minél nagyobb a hasonlóság a két mondat között, annál több pontot kap érte. A BLEU számításának módja formálisan a következőképpen írható le: 
+\begin{equation}
+BLEU = BP \cdot exp\Big(\sum_{n=1}^N \omega_n \cdot log(p_n)\Big),
+\end{equation}
+ahol $BP$ (brevity penalty) a rendszer fedését hivatott értékelni, oly módon, hogy lepontozza a referenciafordításnál sokkal rövidebb fordításokat. $p_n$ módosított pontosság,$\omega_n$ az n-gramok súlya (tipikusan 1 értéket vesz fel). Kimutatták róla azonban, hogy különböző elvű (szabályalapú és statisztikai alapú) rendszerek összehasonlítására nem alkalmas, mert az előbbi jobb eredményt szolgáltat még akkor is, amikor a szubjektív megítélés a szabályalapú rendszerrel készített szövegnek kedvez \cite{koehn-monz:2006:WMT}.
+
+
+\subsubsection{WER (Word Error Rate)}
+A WER szófelismerési hiba, a felismerési egységek a szavak (az összetett szó is egy egység). A Levenshtein-távolság továbbgondolása, hiszen már nem fonéma-szinten működik. Ha $S$ a helyettesítések száma, $D$ a törléseké, $I$ a beszúrásoké, $C$ a helyesen felismert, lefordított szavakat jelenti, $N = S+D+C$ pedig a referenciaszöveg szavainak számát adja meg, akkor:
+\begin{equation}
+WER = \frac{S + D + I}{N}.
+\end{equation}
+
+
+\subsubsection{METEOR (Metric for Evaluation of Translation with Explicit ORdering)}
+A METEOR a gépi fordítás kimenetének kiértékelési metrikája, az unigram-pontosság és a visszanyerés (recall) harmonikus közepére alapszik. Szótövesítést, valamint szinonima-találtatást is jelent a pontos szómegfeleltetésen túl. A BLEU hátrányainak kiküszöböléseként vezették be, ám ez is emberi referenciafordításhoz hasonlítja a gépi fordítást.
+
+
+\subsubsection{F-mérték}
+Az F-mérték a pontosság és visszanyerés (recall) értékeinek harmonikus középe. Ezek mértékek az információ visszakeresés körében népszerűek. 
+\begin{equation}
+F_\alpha = \frac{(\alpha^2 + 1) \cdot PREC \cdot REC}{\alpha^2 \cdot PREC + REC},
+\end{equation}
+\begin{equation}
+PREC = \frac{card(RET \cap REL)}{card(RET)},
+\end{equation}
+\begin{equation}
+REC = \frac{card(RET \cap REL)}{card(REL)},
+\end{equation}
+ahol $RET$ a visszakapott dokumentumok halmaza, $REL$ pedig a releváns dokumentumoké. Az F-mérték csak akkor vesz fel magas értéket, ha a felidézés és a pontosság mértéke is magas.
+
+
+\subsection{Mérőbázis}
+Mérőbázisként az IBM 1 \cite{Collins} modell jelölhető meg. Az SMT-rendszer betanítása során egy egyszerű WSD-rendszer a következőképpen esztimálható: minden forrásmondathoz egy plusz unigram nyelvmodell lesz definiálva. Minden forrásbemenethez az IBM 1 modell alapján kiszámolt valószínűségek szerinti 20 legjobb fordítás rendelődik. Az IBM 1 modellről kimutatták, hogy az SMT-hez legjobban találó plusz sajátosság, úgy működik, mint egy naív WSD osztályozó \cite{Crego10local}.
+
+\subsection{Eredmények}
+A 20,000 állományt tartalmazó párhuzamos korpuszt magyar-angol, angol-magyar párosításba rendezve a kétféle fordítás volt letesztelve. Ezen módszer és a hagyományos statisztikus gépi tanulás (SMT) alapalgoritmusának az előbb említett metrikák alapján történő összevetés eredményét a következő táblázat szemlélteti.
+
+\begin{table}[h!]
+\centering
+\normalsize
+ \begin{tabular}{| c | c | c | c | c |} 
+ \hline
+ Módszer & BLEU & WER & METEOR & $F_1$ \\
+ \hline\hline
+ Mérőbázis & 20,400 \\
+ \hline
+ SMT & 20,400 \\ 
+ 
+ SMT + Wiki WSD & 149.44M \\ 
+ \hline
+ \end{tabular}
+ \caption{Az OPUS tulajdonságai}
+\end{table}
+
+
