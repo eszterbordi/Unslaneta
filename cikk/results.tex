@@ -59,9 +59,29 @@ PREC = \frac{card(RET \cap REL)}{card(RET)},
 REC = \frac{card(RET \cap REL)}{card(REL)},
 \end{equation}
 ahol $RET$ a visszakapott dokumentumok halmaza, $REL$ pedig a releváns dokumentumoké. Az F-mérték csak akkor vesz fel magas értéket, ha a felidézés és a pontosság mértéke is magas.
-\subsection{A kísérlet adatai}
 
 
+\subsection{Mérőbázis}
+Mérőbázisként az IBM 1 \cite{Collins} modell jelölhető meg. Az SMT-rendszer betanítása során egy egyszerű WSD-rendszer a következőképpen esztimálható: minden forrásmondathoz egy plusz unigram nyelvmodell lesz definiálva. Minden forrásbemenethez az IBM 1 modell alapján kiszámolt valószínűségek szerinti 20 legjobb fordítás rendelődik. Az IBM 1 modellről kimutatták, hogy az SMT-hez legjobban találó plusz sajátosság, úgy működik, mint egy naív WSD osztályozó \cite{Crego10local}.
 
+\subsection{Eredmények}
+A 20,000 állományt tartalmazó párhuzamos korpuszt magyar-angol, angol-magyar párosításba rendezve a kétféle fordítás volt letesztelve. Ezen módszer és a hagyományos statisztikus gépi tanulás (SMT) alapalgoritmusának az előbb említett metrikák alapján történő összevetés eredményét a következő táblázat szemlélteti.
+
+\begin{table}[h!]
+\centering
+\normalsize
+ \begin{tabular}{| c | c | c | c | c |} 
+ \hline
+ Módszer & BLEU & WER & METEOR & $F_1$ \\
+ \hline\hline
+ Mérőbázis & 20,400 \\
+ \hline
+ SMT & 20,400 \\ 
+ 
+ SMT + Wiki WSD & 149.44M \\ 
+ \hline
+ \end{tabular}
+ \caption{Az OPUS tulajdonságai}
+\end{table}
 
 
