@@ -1,1 +1,62 @@
 \section{A modell definiálása és letező megoldások} \label{sec:model_definition}
+
+\subsection{A statisztikus gépi fordítás}
+
+A statisztikus módszerek használatát a gépi fordításban legelőször Warren Weaver, egy levélben javasolta az 1949-es években. Azonban az elméleti nehézségeknek és az akkori számítógépek fejlettségének tulajdoníthatóan a módszert csak 1990-ben próbálták ki.
+
+Az általunk felhasznált modell -- a kifejezés alapú fordító modell -- a zajos csatorna modellen alapszik -- \ref{fig:modell:fig1}. Tételezzük fel, hogy egy $F$ nyelv valamilyen $f$ szövegének fordítása egy $E$ célnyelvbe az $e$-vel jelölt szöveg. Annak valószínűsége, hogy $f$-et lefórdítva $e$-t kapunk: $P(e|f)$. Felhasználva Bayes képletét a feltételes valószínűség a következő alakban írható:
+
+\begin{equation}
+	P(e|f) = \frac{P(e)P(f|e)}{P(f)}
+\end{equation}
+
+Az nevezőt elhagyva a következő optimalizálási feladathoz jutunk:
+
+\begin{equation}
+	T(f) = argmax_e P(e|f) = argmax_e P(e)P(f|e)
+\end{equation} 
+
+Ezzel a feladatunkat három részre osztható: 
+\begin{itemize}
+	\item
+		Nyelvi modell: $P(e)$
+	\item
+		Fordítási modell: $P(f|e)$
+	\item
+		Dekóder: $argmax$
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{figure}[b]
+  	\centering
+  		\pgfimage[width=0.6\linewidth]{images/smt_translation_model}
+  	\caption[smt_translation_model]%
+  	{A zajos csatorna modell}
+ 	\label{fig:modell:fig1}
+\end{figure}
+
+
+
+
+
+\subsection{Jelentés egyértelműsítés}
+bemutatni a wsd-t?
+
+\subsection{Létező megoldások}
+jelenlegi phrase based megoldasok
+	miert jok, miert nem
+	osszehasonlitasok mas modszerekkel
+milyen probalkozasok vannak a wsd beepitesere?
+mennyire jok ezek?
