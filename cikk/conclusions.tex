@@ -1,1 +1,11 @@
 \section{Következtetések} \label{sec:conslusions}
+
+A fentiekben bemutattunk egy módszert, amely túlmutat a statikus gépi fordítás eredményein. Tapasztalatain azt mutatják, hogy a Wikipedia enciklopédia használatával tervezett WSD-rendszerünk igencsak ígéretes eredményeket mutat fel társai körében.
+
+ A szemantikus értelmező megépítése kulcsfontosságú lépés. A Wikipedia hatalmas méretű cikk-adatbázisa tökéletes erőforrás az egyes szavakhoz, szövegrészletekhez rendelendő súlyozott fogalomvektorok létrehozásához. Az értelmezés gyorsítására minden szóhoz fogalomlistát rendeltünk, melynek minden eleme az adott fogalom és a szó TFIDF súlya a kötődő cikk alapján.
+ 
+ Az így megalkotott WSD modellünk standard SMT rendszerbe való beágyazásával nyújt igazi áttörést. A rendszer súlyozza a lehetséges fordításokat, melyek közül a legjobb eredmény bizonyul a végső fordításnak.
+
+Célunk az általunk tervezett SMT rendszer-kiterjesztés alkalmazásával gyors-fordítót implementálni, amely például a bemondott vagy beírt szöveg alapján valós időben fordít helyesen. Különös kihívás lesz a különböző nyelvcsaládba tartozó nyelvek közötti konvertálás, melyre tökéletes megoldást nyújthatű módszerünk.
+
+A szerzők ezúton köszönetüket szeretnék nyilvánítani dr. Csató Lehel és dr. Horváth Zoltán egyetemi tanárok részére, akik keretet adtak a jelen téma kiaknázására.
