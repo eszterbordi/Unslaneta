@@ -1,5 +1,7 @@
 \section{A modell definiálása és letező megoldások} \label{sec:model_definition}
 
+
+
 \subsection{A statisztikus gépi fordítás}
 
 A statisztikus módszerek használatát a gépi fordításban legelőször Warren Weaver javasolta egy levélben 1949-ben. Azonban az elméleti nehézségeknek és az akkori számítógépek fejlettségének tulajdoníthatóan a módszert csak 1990-ben próbálták ki \cite{Brown:1990:SAM:92858.92860}.
@@ -48,17 +50,12 @@ A szó alapú modelleknél jobb megoldások a kifejezés alapú modellek \cite{M
 \end{figure}
 
 
-
-
-
 \subsection{Jelentés-egyértelműsítés}
-bemutatni a wsd-t?
 
-jelenlegi phrase based megoldasok
-	miert jok, miert nem
-	osszehasonlitasok mas modszerekkel
-milyen probalkozasok vannak a wsd beepitesere?
-mennyire jok ezek?
+A jelentés-egyértelműsítés (WSD) egy aktívan kutatott probléma a természetes nyelvfeldolgozásban. A módszerrel megvalósítható a szavak megfelelő jelentésének kiválasztása egy adott szövegkörnyezetben. A jelentés-egyértelműsítéshez két bemeneti halmaz szükséges: a szavak halmaza, melyek jelentését meg szeretnénk határozni valamint a tanulási korpusz az adott nyelven. 
+
+A jelenlegi kifejezésen alapuló statisztikus gépi fordító módszerek (SMT) egyik nagy problémája a lexikális pontosság növelése. Ennek érdekében felhasználtak különböző jelentés-egyértelműsítő módszereket, mellyel sikerült a növelni a lexikális pontosságot. Az SMT-rendszer javítására már használtak egyszavas WSD módszert \cite{Carpuat06towardintegrating}, valamint kifejezésen alapuló SMT-t is javítottak vele \cite{Carpuat07improvingstatistical}, viszont jelenlegi tudomásunk szerint a jelentés-egyértelműsítéshez Wikipédia fogalmakat mi használatunk először. 
+
 
 
 Ebben a cikkben, egy olyan statisztikus gépi fordító modellt mutatunk be, mely kifejezés alapú és a Wikipédiát felhasználva jelentés-egyértelműsítéssel növeli az eredmények pontosságát.
