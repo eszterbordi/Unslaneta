@@ -51,10 +51,10 @@ Az előbb leírt módon előállított súlyvektorokat felhasználva a két vekt
 
 \subsection{WSD modul beépítése SMT rendszerbe} \label{sec:WSDinSMT}
 
-Az egyik legegyszerűbb és jól működő modell a jelentés-egyértelműsítés SMT rendszerekbe való integrációjára az $n$ legjobb elem újrarangsorolása (\cite{apidianaki2012wsd}).
+Az egyik legegyszerűbb és jól működő modell a jelentés-egyértelműsítés SMT-rendszerekbe való integrációjára az $n$ legjobb elem újrarangsorolása (\cite{apidianaki2012wsd}).
 
-Első lépésként felhasználjuk a standard SMT rendszerünket, amely segítségével kapunk $n$ darab lehetséges fordítást a bemeneti szövegre. Az így kapott fordításokat és a bemeneti szöveget felhasználva a \ref{sec:WikiWSD}. részben tárgyalt módszer segítségével minden fordításhoz hozzárendelhetünk egy súlyt. Az SMT által és a WSD által adott súlyokat is normalizáljuk, majd ezeket összeadjuk. A végső fordítás az így kapott súlyok szerinti legjobb eredmény lesz:
+Első lépésként felhasználjuk a standard SMT-rendszerünket, amely segítségével kapunk $n$ darab lehetséges fordítást a bemeneti szövegre. Az így kapott fordításokat és a bemeneti szöveget felhasználva a \ref{sec:WikiWSD}. részben tárgyalt módszer segítségével minden fordításhoz hozzárendelhetünk egy súlyt. Az SMT által és a WSD által adott súlyokat is normalizáljuk, majd ezeket összeadjuk. A végső fordítás az így kapott súlyok szerinti legjobb eredmény lesz:
 
 \begin{equation}
-	f = argmax_i (\frac{w_{SMT, i}}{\left\lVert w_{SMT} \right\rVert} + \frac{w_{WSD, i}}{\left\lVert w_{WSD} \right\rVert})
+	f = argmax_i (\frac{w_{SMT, i}}{\left\lVert w_{SMT} \right\rVert} + \frac{w_{WSD, i}}{\left\lVert w_{WSD} \right(\rVert})
 \end{equation}
