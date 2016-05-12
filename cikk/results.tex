@@ -62,10 +62,10 @@ ahol $RET$ a visszakapott dokumentumok halmaza, $REL$ pedig a releváns dokument
 
 
 \subsection{Mérőbázis}
-Mérőbázisként az IBM 1 \cite{Collins} modell jelölhető meg. Az SMT-rendszer betanítása során egy egyszerű WSD-rendszer a következőképpen esztimálható: minden forrásmondathoz egy plusz unigram nyelvmodell lesz definiálva. Minden forrásbemenethez az IBM 1 modell alapján kiszámolt valószínűségek szerinti 20 legjobb fordítás rendelődik. Az IBM 1 modellről kimutatták, hogy az SMT-hez legjobban találó plusz sajátosság, úgy működik, mint egy naív WSD osztályozó \cite{Crego10local}.
+Mérőbázisként az IBM 1 \cite{Collins} modell jelölhető meg. Az SMT-rendszer betanítása során egy egyszerű WSD-rendszer a következőképpen esztimálható: minden forrásmondathoz egy plusz unigram nyelvmodell lesz definiálva. Minden forrásbemenethez az IBM 1 modell alapján kiszámolt valószínűségek szerinti 20 legjobb fordítás rendelődik. Az IBM 1 modellről kimutatták, hogy az SMT-hez legjobban találó plusz sajátosság, úgy működik, mint egy naiv WSD-osztályozó \cite{Crego10local}.
 
 \subsection{Eredmények}
-A 20,000 állományt tartalmazó párhuzamos korpuszt magyar-angol, angol-magyar párosításba rendezve a kétféle fordítás volt letesztelve. Ezen módszer és a hagyományos statisztikus gépi tanulás (SMT) alapalgoritmusának az előbb említett metrikák alapján történő összevetés eredményét a következő táblázat szemlélteti.
+A 20.000 állományt tartalmazó párhuzamos korpuszt magyar-angol, angol-magyar párosításba rendezve a kétféle fordítás volt letesztelve. Ezen módszer és a hagyományos statisztikus gépi tanulás (SMT) alapalgoritmusának az előbb említett metrikák alapján történő összevetés eredményét a következő táblázat szemlélteti.
 
 \begin{table}[h!]
 \centering
@@ -74,14 +74,15 @@ A 20,000 állományt tartalmazó párhuzamos korpuszt magyar-angol, angol-magyar
  \hline
  Módszer & BLEU & WER & METEOR & $F_1$ \\
  \hline\hline
- Mérőbázis & 20,400 \\
+ Mérőbázis &  0.220 & 10.453 & 7.566 & 2.891\\
  \hline
- SMT & 20,400 \\ 
+ SMT &  0.243 & 11.786 & 11.561 & 2.861\\ 
  
- SMT + Wiki WSD & 149.44M \\ 
+ SMT + Wiki WSD &  \textbf{0.312} & \textbf{12.770} & 10.002 & 2.333 \\ 
  \hline
  \end{tabular}
- \caption{Az OPUS tulajdonságai}
+ \caption{Eredmények}
 \end{table}
 
+ Bár a WSD-vel történő kiegészítés METEOR-mérték esetén kisebb az egyszerű SMT-vel végzett fordításnál kapott eredménynél, a BLEU-, valamint a WER-mérték statisztikailag is számottevő javulást jelent.
 
