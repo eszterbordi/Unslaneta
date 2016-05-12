@@ -1,10 +1,10 @@
 \section{Saját módszer} \label{sec:new_method}
 
-Ebben a részben részletezzünk az általunk implementált módszert. A cél egy olyan rendszer felépítése, amely a már meglévő statisztikus gépi fordítás rendszereket egészíti ki egy jelentés egyértelműsítést szolgáltató (WSD) rendszerrel. Az SMT rendszerek gyakran rossz eredményt adnak abban az esetben, amennyiben a fordítandó szavak több jelentéssel is bírnak. Ezekben az esetekben nyújthat segítséget egy ilyen bővítmény, amely képes a szövegkörnyezet alapján meghatározni a szó tényleges jelentését, és így egy pontos fordítást adni az adott mondatra. 
+Ebben a részben részletezzünk az általunk implementált módszert. A cél egy olyan rendszer felépítése, amely a már meglévő statisztikus gépi fordítás rendszereket egészíti ki egy jelentés-egyértelműsítést szolgáltató (WSD) rendszerrel. Az SMT rendszerek gyakran rossz eredményt adnak abban az esetben, amennyiben a fordítandó szavak több jelentéssel is bírnak. Ezekben az esetekben nyújthat segítséget egy ilyen bővítmény, amely képes a szövegkörnyezet alapján meghatározni a szó tényleges jelentését, és így egy pontos fordítást adni az adott mondatra. 
 
 Tárgyaljuk a felhasznált Wikipedia alapú WSD modult, valamint részletezzük annak alkalmazását egy meglévő SMT rendszerben.
 
-\subsection{Wikipedia alapú jelentés egyértelműsítés} \label{sec:WikiWSD}
+\subsection{Wikipedia alapú jelentés-egyértelműsítés} \label{sec:WikiWSD}
 
 Egy korábbi munkában \cite{Gabrilovich:2007:CSR} bevezettek egy Wikipedia oldalakon alapuló módszert, amelyben a cikkek címeit mint fogalmakat tekintették, amelyeket egy adott szó jelentésének leírására használták fel. A Wikipedia esetünkben is egy jó megoldásnak bizonyult, hiszen a világ egyik legnagyobb nyílt enciklopédiája (az angol változat több, mint 400 millió szót és több, mint 1 millió cikket tartalmaz), a tartalom különböző cikkekbe van rendezve, és ami a számunkra legfontosabb, hogy ugyanazok a cikkek több nyelven is elérhetőek, és ezek között a cikkek között egy jól meghatározott megfeleltetés is van. Ezekből az okokból kifolyólag mi is egy hasonló rendszer alkalmazása mellett döntöttünk.
 
@@ -51,7 +51,7 @@ Az előbb leírt módon előállított súlyvektorokat felhasználva a két vekt
 
 \subsection{WSD modul beépítése SMT rendszerbe} \label{sec:WSDinSMT}
 
-Az egyik legegyszerűbb és jól működő modell a jelentés egyértelműsítés SMT rendszerekbe való integrációjára az $n$ legjobb elem újrarangsorolása (\cite{apidianaki2012wsd}).
+Az egyik legegyszerűbb és jól működő modell a jelentés-egyértelműsítés SMT rendszerekbe való integrációjára az $n$ legjobb elem újrarangsorolása (\cite{apidianaki2012wsd}).
 
 Első lépésként felhasználjuk a standard SMT rendszerünket, amely segítségével kapunk $n$ darab lehetséges fordítást a bemeneti szövegre. Az így kapott fordításokat és a bemeneti szöveget felhasználva a \ref{sec:WikiWSD}. részben tárgyalt módszer segítségével minden fordításhoz hozzárendelhetünk egy súlyt. Az SMT által és a WSD által adott súlyokat is normalizáljuk, majd ezeket összeadjuk. A végső fordítás az így kapott súlyok szerinti legjobb eredmény lesz:
 
