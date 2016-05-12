@@ -6,7 +6,7 @@
 
 A statisztikus módszerek használatát a gépi fordításban legelőször Warren Weaver javasolta egy levélben 1949-ben. Azonban az elméleti nehézségeknek és az akkori számítógépek fejlettségének tulajdoníthatóan a módszert csak 1990-ben próbálták ki \cite{Brown:1990:SAM:92858.92860}.
 
-Az általunk felhasznált modell -- a kifejezés alapú fordító modell -- a zajos csatorna modellen alapszik -- \ref{fig:modell:fig1}. Tételezzük fel, hogy egy $F$ nyelv valamilyen $f$ szövegének fordítása egy $E$ célnyelvbe az $e$-vel jelölt szöveg. Annak valószínűsége, hogy $f$-et lefordítva $e$-t kapunk: $P(e|f)$. Felhasználva Bayes képletét a feltételes valószínűség a következő alakba írható:
+Az általunk felhasznált modell -- a kifejezés alapú fordító modell -- a zajos csatorna modellen alapszik -- \ref{fig:modell:fig1}. ábra. Tételezzük fel, hogy egy $F$ nyelv valamilyen $f$ szövegének fordítása egy $E$ célnyelvbe az $e$-vel jelölt szöveg. Annak valószínűsége, hogy $f$-et lefordítva $e$-t kapunk: $P(e|f)$. Felhasználva Bayes képletét a feltételes valószínűség a következő alakba írható:
 
 \begin{equation}
 	P(e|f) = \frac{P(e)P(f|e)}{P(f)}
