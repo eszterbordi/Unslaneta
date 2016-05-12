@@ -2,7 +2,7 @@
 
 \subsection{A statisztikus gépi fordítás}
 
-A statisztikus módszerek használatát a gépi fordításban legelőször Warren Weaver, egy levélben javasolta az 1949-es években. Azonban az elméleti nehézségeknek és az akkori számítógépek fejlettségének tulajdoníthatóan a módszert csak 1990-ben próbálták ki.
+A statisztikus módszerek használatát a gépi fordításban legelőször Warren Weaver, egy levélben javasolta az 1949-es évben. Azonban az elméleti nehézségeknek és az akkori számítógépek fejlettségének tulajdoníthatóan a módszert csak 1990-ben próbálták ki \cite{Brown:1990:SAM:92858.92860}.
 
 Az általunk felhasznált modell -- a kifejezés alapú fordító modell -- a zajos csatorna modellen alapszik -- \ref{fig:modell:fig1}. Tételezzük fel, hogy egy $F$ nyelv valamilyen $f$ szövegének fordítása egy $E$ célnyelvbe az $e$-vel jelölt szöveg. Annak valószínűsége, hogy $f$-et lefórdítva $e$-t kapunk: $P(e|f)$. Felhasználva Bayes képletét a feltételes valószínűség a következő alakban írható:
 
@@ -19,16 +19,16 @@ Az nevezőt elhagyva a következő optimalizálási feladathoz jutunk:
 Ezzel a feladatunkat három részre osztható: 
 \begin{itemize}
 	\item
-		Nyelvi modell: $P(e)$
+		A nyelvi modell --  $P(e)$ -- mely a célnyelv gördülékenységét, folytonosságát biztosítja.
 	\item
-		Fordítási modell: $P(f|e)$
+		A fordítási modell --  $P(f|e)$ -- mellyel növelhető a lexikális megfeleltetések pontossága.
 	\item
-		Dekóder: $argmax$
+		A dekóder -- $argmax$ -- kiválasztja a legjobban megfelelő $e$ szöveget a célnyelvből.
 \end{itemize}
 
+A fordítási modell első változatai a szó alapú modellek -- IBM modell, melyek nem veszik figyelembe a szövegkontextust. A modellben a forrás $f$ és cél $e$ szövegeknek csak különálló szavak felelnek meg, így "word-to-word" fordítás valósítanak meg. A modell azt vizsgálja, hogy egy adott $f$ szónak milyen valószínűséggel felel meg a célnyelv $e$ szava \cite{Brown:1990:SAM:92858.92860} \cite{Berger:1994}.
 
-
-
+A szó alapú modelleknél egy jobb megoldás a kifejezés alapú modellek \cite{Marcu:2002}, \cite{Och99improvedalignment}. A szó alapú modellek nagy hátránya a nehéz a tokenizálás \cite{Lopez07asurvey}, valamint komplex nyelvek esetén a fordítási pontatlanság \cite{Lopez07asurvey}. A kifejezés alapú modell a szavak helyett $(f_i, e_i)$ kifejezés párokat vizsgál. A $P(f_i|e_i)$ feltételes valószínűséget a korpuszból frekvencia számmal becsüljük. A lehetséges kifejezés párokból és hozzájuk tartozó feltételes valószínűségekből felépítjük a fordítási táblát, melyet felhasználunk a fordítási modellhez.
 
 
 
@@ -54,9 +54,11 @@ Ezzel a feladatunkat három részre osztható:
 \subsection{Jelentés egyértelműsítés}
 bemutatni a wsd-t?
 
-\subsection{Létező megoldások}
 jelenlegi phrase based megoldasok
 	miert jok, miert nem
 	osszehasonlitasok mas modszerekkel
 milyen probalkozasok vannak a wsd beepitesere?
 mennyire jok ezek?
+
+
+Ebben a cikkben, egy olyan statisztikus gépi fordító modellt mutatunk be, mely kifejezés alapú és a wikipédiát felhasználva jelentés egyértelműsítéssel növeli az eredmények pontosságát.
