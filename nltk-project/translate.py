@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 from xml.dom import minidom
+from nltk.translate import AlignedSent, IBMModel2
 
 def build_dict_from_xml(doc):
     talks = {}
@@ -39,11 +40,17 @@ def get_aligned_sentences():
 
     return sentence_pairs
 
+def build_ibm2_model(sentence_pairs):
+    bitext = []
+
+    for (sent_en, sent_hu) in sentence_pairs:
+        bitext.append(AlignedSent(sent_en.split(" "), sent_hu.split(" ")))
+
+    return IBMModel2(bitext, 5)
+
 def main():
     sentence_pairs = get_aligned_sentences()
-    
-    for pair in sentence_pairs:
-        print(pair)
+    ibm2 = build_ibm2_model(sentence_pairs)
 
 if __name__ == '__main__':
     main()
