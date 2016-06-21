@@ -1,0 +1,774 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml language="en">
+  <file id="206">
+    <head>
+      <url>http://www.ted.com/talks/alice_goffman_college_or_prison_two_destinies_one_blatant_injustice</url>
+      <pagesize>83623</pagesize>
+      <dtime>Thu Jan 28 12:29:17 CET 2016</dtime>
+      <encoding>UTF-8</encoding>
+      <content-type>text/html; charset=utf-8</content-type>
+      <keywords>talks, crime, culture, inequality, prison, race, violence</keywords>
+      <speaker>Alice Goffman</speaker>
+      <talkid>2247</talkid>
+      <videourl>http://download.ted.com/talks/AliceGoffman_2015.mp4</videourl>
+      <videopath>talks/AliceGoffman_2015.mp4</videopath>
+      <date>2015/03/19</date>
+      <title>Alice Goffman: How we're priming some kids for college — and others for prison</title>
+      <description>TED Talk Subtitles and Transcript: In the United States, two institutions guide teenagers on the journey to adulthood: college and prison. Sociologist Alice Goffman spent six years in a troubled Philadelphia neighborhood and saw first-hand how teenagers of African-American and Latino backgrounds are funneled down the path to prison — sometimes starting with relatively minor infractions. In an impassioned talk she asks, “Why are we offering only handcuffs and jail time?”</description>
+      <transcription>
+        <seekvideo id="1056">On the path that American children travel to adulthood,</seekvideo>
+        <seekvideo id="4971">two institutions oversee the journey.</seekvideo>
+        <seekvideo id="8519">The first is the one we hear a lot about: college.</seekvideo>
+        <seekvideo id="12262">Some of you may remember the excitement that you felt</seekvideo>
+        <seekvideo id="14845">when you first set off for college.</seekvideo>
+        <seekvideo id="17431">Some of you may be in college right now</seekvideo>
+        <seekvideo id="19983">and you're feeling this excitement at this very moment.</seekvideo>
+        <seekvideo id="23988">College has some shortcomings.</seekvideo>
+        <seekvideo id="25667">It's expensive; it leaves young people in debt.</seekvideo>
+        <seekvideo id="29003">But all in all, it's a pretty good path.</seekvideo>
+        <seekvideo id="31947">Young people emerge from college with pride and with great friends</seekvideo>
+        <seekvideo id="37114">and with a lot of knowledge about the world.</seekvideo>
+        <seekvideo id="39453">And perhaps most importantly,</seekvideo>
+        <seekvideo id="41289">a better chance in the labor market than they had before they got there.</seekvideo>
+        <seekvideo id="45795">Today I want to talk about the second institution</seekvideo>
+        <seekvideo id="48498">overseeing the journey from childhood to adulthood in the United States.</seekvideo>
+        <seekvideo id="54056">And that institution is prison.</seekvideo>
+        <seekvideo id="58791">Young people on this journey are meeting with probation officers</seekvideo>
+        <seekvideo id="62536">instead of with teachers.</seekvideo>
+        <seekvideo id="64939">They're going to court dates instead of to class.</seekvideo>
+        <seekvideo id="68832">Their junior year abroad is instead a trip to a state correctional facility.</seekvideo>
+        <seekvideo id="73909">And they're emerging from their 20s</seekvideo>
+        <seekvideo id="76599">not with degrees in business and English,</seekvideo>
+        <seekvideo id="79796">but with criminal records.</seekvideo>
+        <seekvideo id="82514">This institution is also costing us a lot,</seekvideo>
+        <seekvideo id="85107">about 40,000 dollars a year</seekvideo>
+        <seekvideo id="86749">to send a young person to prison in New Jersey.</seekvideo>
+        <seekvideo id="91167">But here, taxpayers are footing the bill</seekvideo>
+        <seekvideo id="93723">and what kids are getting is a cold prison cell</seekvideo>
+        <seekvideo id="97206">and a permanent mark against them when they come home</seekvideo>
+        <seekvideo id="100016">and apply for work.</seekvideo>
+        <seekvideo id="102765">There are more and more kids on this journey to adulthood</seekvideo>
+        <seekvideo id="106211">than ever before in the United States and that's because in the past 40 years,</seekvideo>
+        <seekvideo id="111435">our incarceration rate has grown by 700 percent.</seekvideo>
+        <seekvideo id="117187">I have one slide for this talk.</seekvideo>
+        <seekvideo id="119316">Here it is.</seekvideo>
+        <seekvideo id="121760">Here's our incarceration rate,</seekvideo>
+        <seekvideo id="123623">about 716 people per 100,000 in the population.</seekvideo>
+        <seekvideo id="131205">Here's the OECD countries.</seekvideo>
+        <seekvideo id="138885">What's more, it's poor kids that we're sending to prison,</seekvideo>
+        <seekvideo id="141617">too many drawn from African-American and Latino communities</seekvideo>
+        <seekvideo id="145105">so that prison now stands firmly between the young people trying to make it</seekvideo>
+        <seekvideo id="149986">and the fulfillment of the American Dream.</seekvideo>
+        <seekvideo id="153418">The problem's actually a bit worse than this</seekvideo>
+        <seekvideo id="156274">'cause we're not just sending poor kids to prison,</seekvideo>
+        <seekvideo id="158952">we're saddling poor kids with court fees,</seekvideo>
+        <seekvideo id="161919">with probation and parole restrictions,</seekvideo>
+        <seekvideo id="164240">with low-level warrants,</seekvideo>
+        <seekvideo id="166127">we're asking them to live in halfway houses and on house arrest,</seekvideo>
+        <seekvideo id="169622">and we're asking them to negotiate a police force</seekvideo>
+        <seekvideo id="173227">that is entering poor communities of color,</seekvideo>
+        <seekvideo id="175640">not for the purposes of promoting public safety,</seekvideo>
+        <seekvideo id="178839">but to make arrest counts, to line city coffers.</seekvideo>
+        <seekvideo id="186537">This is the hidden underside to our historic experiment in punishment:</seekvideo>
+        <seekvideo id="190925">young people worried that at any moment, they will be stopped, searched and seized.</seekvideo>
+        <seekvideo id="196635">Not just in the streets, but in their homes,</seekvideo>
+        <seekvideo id="199258">at school and at work.</seekvideo>
+        <seekvideo id="202925">I got interested in this other path to adulthood</seekvideo>
+        <seekvideo id="206116">when I was myself a college student</seekvideo>
+        <seekvideo id="208357">attending the University of Pennsylvania</seekvideo>
+        <seekvideo id="210415">in the early 2000s.</seekvideo>
+        <seekvideo id="212493">Penn sits within a historic African-American neighborhood.</seekvideo>
+        <seekvideo id="216060">So you've got these two parallel journeys going on simultaneously:</seekvideo>
+        <seekvideo id="221298">the kids attending this elite, private university,</seekvideo>
+        <seekvideo id="224419">and the kids from the adjacent neighborhood,</seekvideo>
+        <seekvideo id="226885">some of whom are making it to college,</seekvideo>
+        <seekvideo id="228813">and many of whom are being shipped to prison.</seekvideo>
+        <seekvideo id="232831">In my sophomore year, I started tutoring a young woman who was in high school</seekvideo>
+        <seekvideo id="237415">who lived about 10 minutes away from the university.</seekvideo>
+        <seekvideo id="240409">Soon, her cousin came home from a juvenile detention center.</seekvideo>
+        <seekvideo id="243942">He was 15, a freshman in high school.</seekvideo>
+        <seekvideo id="246600">I began to get to know him and his friends and family,</seekvideo>
+        <seekvideo id="250259">and I asked him what he thought about me writing about his life</seekvideo>
+        <seekvideo id="253611">for my senior thesis in college.</seekvideo>
+        <seekvideo id="256196">This senior thesis became a dissertation at Princeton</seekvideo>
+        <seekvideo id="260387">and now a book.</seekvideo>
+        <seekvideo id="261935">By the end of my sophomore year,</seekvideo>
+        <seekvideo id="263533">I moved into the neighborhood and I spent the next six years</seekvideo>
+        <seekvideo id="266903">trying to understand what young people were facing as they came of age.</seekvideo>
+        <seekvideo id="272234">The first week I spent in this neighborhood,</seekvideo>
+        <seekvideo id="274318">I saw two boys, five and seven years old,</seekvideo>
+        <seekvideo id="276894">play this game of chase,</seekvideo>
+        <seekvideo id="278386">where the older boy ran after the other boy.</seekvideo>
+        <seekvideo id="281337">He played the cop.</seekvideo>
+        <seekvideo id="282532">When the cop caught up to the younger boy,</seekvideo>
+        <seekvideo id="284720">he pushed him down,</seekvideo>
+        <seekvideo id="286420">handcuffed him with imaginary handcuffs,</seekvideo>
+        <seekvideo id="288971">took a quarter out of the other child's pocket,</seekvideo>
+        <seekvideo id="291282">saying, "I'm seizing that."</seekvideo>
+        <seekvideo id="294874">He asked the child if he was carrying any drugs</seekvideo>
+        <seekvideo id="298214">or if he had a warrant.</seekvideo>
+        <seekvideo id="300659">Many times, I saw this game repeated,</seekvideo>
+        <seekvideo id="302664">sometimes children would simply give up running,</seekvideo>
+        <seekvideo id="305052">and stick their bodies flat against the ground</seekvideo>
+        <seekvideo id="307248">with their hands above their heads, or flat up against a wall.</seekvideo>
+        <seekvideo id="310593">Children would yell at each other,</seekvideo>
+        <seekvideo id="312588">"I'm going to lock you up,</seekvideo>
+        <seekvideo id="313870">I'm going to lock you up and you're never coming home!"</seekvideo>
+        <seekvideo id="317052">Once I saw a six-year-old child pull another child's pants down</seekvideo>
+        <seekvideo id="321406">and try to do a cavity search.</seekvideo>
+        <seekvideo id="324756">In the first 18 months that I lived in this neighborhood,</seekvideo>
+        <seekvideo id="327935">I wrote down every time I saw any contact between police</seekvideo>
+        <seekvideo id="331627">and people that were my neighbors.</seekvideo>
+        <seekvideo id="334553">So in the first 18 months,</seekvideo>
+        <seekvideo id="336652">I watched the police stop pedestrians or people in cars,</seekvideo>
+        <seekvideo id="340421">search people, run people's names,</seekvideo>
+        <seekvideo id="342589">chase people through the streets,</seekvideo>
+        <seekvideo id="344533">pull people in for questioning,</seekvideo>
+        <seekvideo id="346306">or make an arrest every single day, with five exceptions.</seekvideo>
+        <seekvideo id="351142">Fifty-two times, I watched the police break down doors,</seekvideo>
+        <seekvideo id="355077">chase people through houses</seekvideo>
+        <seekvideo id="357118">or make an arrest of someone in their home.</seekvideo>
+        <seekvideo id="360337">Fourteen times in this first year and a half,</seekvideo>
+        <seekvideo id="363150">I watched the police punch, choke, kick, stomp on or beat young men</seekvideo>
+        <seekvideo id="368450">after they had caught them.</seekvideo>
+        <seekvideo id="372289">Bit by bit, I got to know two brothers,</seekvideo>
+        <seekvideo id="374665">Chuck and Tim.</seekvideo>
+        <seekvideo id="376209">Chuck was 18 when we met, a senior in high school.</seekvideo>
+        <seekvideo id="379250">He was playing on the basketball team and making C's and B's.</seekvideo>
+        <seekvideo id="382798">His younger brother, Tim, was 10.</seekvideo>
+        <seekvideo id="384697">And Tim loved Chuck; he followed him around a lot,</seekvideo>
+        <seekvideo id="387848">looked to Chuck to be a mentor.</seekvideo>
+        <seekvideo id="390139">They lived with their mom and grandfather</seekvideo>
+        <seekvideo id="392285">in a two-story row home with a front lawn and a back porch.</seekvideo>
+        <seekvideo id="395724">Their mom was struggling with addiction all while the boys were growing up.</seekvideo>
+        <seekvideo id="399385">She never really was able to hold down a job for very long.</seekvideo>
+        <seekvideo id="403242">It was their grandfather's pension that supported the family,</seekvideo>
+        <seekvideo id="406281">not really enough to pay for food and clothes</seekvideo>
+        <seekvideo id="409484">and school supplies for growing boys.</seekvideo>
+        <seekvideo id="412215">The family was really struggling.</seekvideo>
+        <seekvideo id="414401">So when we met, Chuck was a senior in high school.</seekvideo>
+        <seekvideo id="416780">He had just turned 18.</seekvideo>
+        <seekvideo id="419628">That winter, a kid in the schoolyard</seekvideo>
+        <seekvideo id="422770">called Chuck's mom a crack whore.</seekvideo>
+        <seekvideo id="426029">Chuck pushed the kid's face into the snow</seekvideo>
+        <seekvideo id="428904">and the school cops charged him with aggravated assault.</seekvideo>
+        <seekvideo id="432729">The other kid was fine the next day,</seekvideo>
+        <seekvideo id="434479">I think it was his pride that was injured more than anything.</seekvideo>
+        <seekvideo id="437952">But anyway, since Chuck was 18,</seekvideo>
+        <seekvideo id="439665">this agg. assault case sent him to adult county jail</seekvideo>
+        <seekvideo id="442853">on State Road in northeast Philadelphia,</seekvideo>
+        <seekvideo id="445278">where he sat, unable to pay the bail -- he couldn't afford it --</seekvideo>
+        <seekvideo id="449345">while the trial dates dragged on and on and on</seekvideo>
+        <seekvideo id="452544">through almost his entire senior year.</seekvideo>
+        <seekvideo id="455926">Finally, near the end of this season,</seekvideo>
+        <seekvideo id="458976">the judge on this assault case threw out most of the charges</seekvideo>
+        <seekvideo id="462323">and Chuck came home</seekvideo>
+        <seekvideo id="463657">with only a few hundred dollars' worth of court fees hanging over his head.</seekvideo>
+        <seekvideo id="468004">Tim was pretty happy that day.</seekvideo>
+        <seekvideo id="470547">The next fall, Chuck tried to re-enroll as a senior,</seekvideo>
+        <seekvideo id="473301">but the school secretary told him that</seekvideo>
+        <seekvideo id="475315">he was then 19 and too old to be readmitted.</seekvideo>
+        <seekvideo id="478446">Then the judge on his assault case issued him a warrant for his arrest</seekvideo>
+        <seekvideo id="482113">because he couldn't pay the 225 dollars in court fees</seekvideo>
+        <seekvideo id="485388">that came due a few weeks after the case ended.</seekvideo>
+        <seekvideo id="488915">Then he was a high school dropout living on the run.</seekvideo>
+        <seekvideo id="492935">Tim's first arrest came later that year</seekvideo>
+        <seekvideo id="494987">after he turned 11.</seekvideo>
+        <seekvideo id="496770">Chuck had managed to get his warrant lifted</seekvideo>
+        <seekvideo id="498900">and he was on a payment plan for the court fees</seekvideo>
+        <seekvideo id="501561">and he was driving Tim to school in his girlfriend's car.</seekvideo>
+        <seekvideo id="505071">So a cop pulls them over, runs the car,</seekvideo>
+        <seekvideo id="507806">and the car comes up as stolen in California.</seekvideo>
+        <seekvideo id="511591">Chuck had no idea where in the history of this car it had been stolen.</seekvideo>
+        <seekvideo id="515714">His girlfriend's uncle bought it from a used car auction</seekvideo>
+        <seekvideo id="519190">in northeast Philly.</seekvideo>
+        <seekvideo id="520657">Chuck and Tim had never been outside of the tri-state,</seekvideo>
+        <seekvideo id="523485">let alone to California.</seekvideo>
+        <seekvideo id="525834">But anyway, the cops down at the precinct</seekvideo>
+        <seekvideo id="527932">charged Chuck with receiving stolen property.</seekvideo>
+        <seekvideo id="531500">And then a juvenile judge, a few days later,</seekvideo>
+        <seekvideo id="534312">charged Tim, age 11,</seekvideo>
+        <seekvideo id="536464">with accessory to receiving a stolen property</seekvideo>
+        <seekvideo id="539537">and then he was placed on three years of probation.</seekvideo>
+        <seekvideo id="544430">With this probation sentence hanging over his head,</seekvideo>
+        <seekvideo id="547332">Chuck sat his little brother down</seekvideo>
+        <seekvideo id="549419">and began teaching him how to run from the police.</seekvideo>
+        <seekvideo id="552868">They would sit side by side on their back porch</seekvideo>
+        <seekvideo id="555200">looking out into the shared alleyway</seekvideo>
+        <seekvideo id="557264">and Chuck would coach Tim how to spot undercover cars,</seekvideo>
+        <seekvideo id="561104">how to negotiate a late-night police raid, how and where to hide.</seekvideo>
+        <seekvideo id="567011">I want you to imagine for a second</seekvideo>
+        <seekvideo id="568691">what Chuck and Tim's lives would be like</seekvideo>
+        <seekvideo id="571060">if they were living in a neighborhood where kids were going to college,</seekvideo>
+        <seekvideo id="575809">not prison.</seekvideo>
+        <seekvideo id="577918">A neighborhood like the one I got to grow up in.</seekvideo>
+        <seekvideo id="581071">Okay, you might say.</seekvideo>
+        <seekvideo id="582536">But Chuck and Tim, kids like them, they're committing crimes!</seekvideo>
+        <seekvideo id="586288">Don't they deserve to be in prison?</seekvideo>
+        <seekvideo id="588414">Don't they deserve to be living in fear of arrest?</seekvideo>
+        <seekvideo id="592228">Well, my answer would be no.</seekvideo>
+        <seekvideo id="595350">They don't.</seekvideo>
+        <seekvideo id="596430">And certainly not for the same things that other young people</seekvideo>
+        <seekvideo id="599457">with more privilege are doing with impunity.</seekvideo>
+        <seekvideo id="602901">If Chuck had gone to my high school,</seekvideo>
+        <seekvideo id="604718">that schoolyard fight would have ended there,</seekvideo>
+        <seekvideo id="607041">as a schoolyard fight.</seekvideo>
+        <seekvideo id="608717">It never would have become an aggravated assault case.</seekvideo>
+        <seekvideo id="612937">Not a single kid that I went to college with</seekvideo>
+        <seekvideo id="615758">has a criminal record right now.</seekvideo>
+        <seekvideo id="617437">Not a single one.</seekvideo>
+        <seekvideo id="619311">But can you imagine how many might have if the police had stopped those kids</seekvideo>
+        <seekvideo id="623316">and searched their pockets for drugs as they walked to class?</seekvideo>
+        <seekvideo id="627183">Or had raided their frat parties in the middle of the night?</seekvideo>
+        <seekvideo id="632384">Okay, you might say.</seekvideo>
+        <seekvideo id="633656">But doesn't this high incarceration rate</seekvideo>
+        <seekvideo id="635646">partly account for our really low crime rate?</seekvideo>
+        <seekvideo id="638399">Crime is down. That's a good thing.</seekvideo>
+        <seekvideo id="640823">Totally, that is a good thing. Crime is down.</seekvideo>
+        <seekvideo id="643310">It dropped precipitously in the '90s and through the 2000s.</seekvideo>
+        <seekvideo id="646837">But according to a committee of academics</seekvideo>
+        <seekvideo id="648882">convened by the National Academy of Sciences last year,</seekvideo>
+        <seekvideo id="652536">the relationship between our historically high incarceration rates</seekvideo>
+        <seekvideo id="656545">and our low crime rate is pretty shaky.</seekvideo>
+        <seekvideo id="660129">It turns out that the crime rate goes up and down</seekvideo>
+        <seekvideo id="663569">irrespective of how many young people we send to prison.</seekvideo>
+        <seekvideo id="669265">We tend to think about justice in a pretty narrow way:</seekvideo>
+        <seekvideo id="672358">good and bad, innocent and guilty.</seekvideo>
+        <seekvideo id="675962">Injustice is about being wrongfully convicted.</seekvideo>
+        <seekvideo id="679317">So if you're convicted of something you did do,</seekvideo>
+        <seekvideo id="681632">you should be punished for it.</seekvideo>
+        <seekvideo id="683467">There are innocent and guilty people,</seekvideo>
+        <seekvideo id="685233">there are victims and there are perpetrators.</seekvideo>
+        <seekvideo id="687670">Maybe we could think a little bit more broadly than that.</seekvideo>
+        <seekvideo id="692071">Right now, we're asking kids who live in the most disadvantaged neighborhoods,</seekvideo>
+        <seekvideo id="696505">who have the least amount of family resources,</seekvideo>
+        <seekvideo id="698786">who are attending the country's worst schools,</seekvideo>
+        <seekvideo id="701347">who are facing the toughest time in the labor market,</seekvideo>
+        <seekvideo id="704253">who are living in neighborhoods where violence is an everyday problem,</seekvideo>
+        <seekvideo id="707906">we're asking these kids to walk the thinnest possible line --</seekvideo>
+        <seekvideo id="712479">to basically never do anything wrong.</seekvideo>
+        <seekvideo id="716290">Why are we not providing support to young kids facing these challenges?</seekvideo>
+        <seekvideo id="720791">Why are we offering only handcuffs, jail time and this fugitive existence?</seekvideo>
+        <seekvideo id="728037">Can we imagine something better?</seekvideo>
+        <seekvideo id="730543">Can we imagine a criminal justice system that prioritizes recovery,</seekvideo>
+        <seekvideo id="734798">prevention, civic inclusion,</seekvideo>
+        <seekvideo id="737385">rather than punishment?</seekvideo>
+        <seekvideo id="740086">(Applause)</seekvideo>
+        <seekvideo id="747855">A criminal justice system that acknowledges</seekvideo>
+        <seekvideo id="750130">the legacy of exclusion that poor people of color in the U.S. have faced</seekvideo>
+        <seekvideo id="754110">and that does not promote and perpetuate those exclusions.</seekvideo>
+        <seekvideo id="758266">(Applause)</seekvideo>
+        <seekvideo id="763291">And finally, a criminal justice system that believes in black young people,</seekvideo>
+        <seekvideo id="767853">rather than treating black young people as the enemy to be rounded up.</seekvideo>
+        <seekvideo id="771717">(Applause)</seekvideo>
+        <seekvideo id="779460">The good news is that we already are.</seekvideo>
+        <seekvideo id="782287">A few years ago, Michelle Alexander wrote "The New Jim Crow,"</seekvideo>
+        <seekvideo id="787110">which got Americans to see incarceration as a civil rights issue</seekvideo>
+        <seekvideo id="791123">of historic proportions in a way they had not seen it before.</seekvideo>
+        <seekvideo id="795479">President Obama and Attorney General Eric Holder have come out very strongly</seekvideo>
+        <seekvideo id="799238">on sentencing reform,</seekvideo>
+        <seekvideo id="800955">on the need to address racial disparity in incarceration.</seekvideo>
+        <seekvideo id="804699">We're seeing states throw out Stop and Frisk</seekvideo>
+        <seekvideo id="807309">as the civil rights violation that it is.</seekvideo>
+        <seekvideo id="810345">We're seeing cities and states decriminalize possession of marijuana.</seekvideo>
+        <seekvideo id="815400">New York, New Jersey and California</seekvideo>
+        <seekvideo id="817257">have been dropping their prison populations, closing prisons,</seekvideo>
+        <seekvideo id="821094">while also seeing a big drop in crime.</seekvideo>
+        <seekvideo id="823375">Texas has gotten into the game now,</seekvideo>
+        <seekvideo id="825068">also closing prisons, investing in education.</seekvideo>
+        <seekvideo id="828913">This curious coalition is building from the right and the left,</seekvideo>
+        <seekvideo id="832570">made up of former prisoners and fiscal conservatives,</seekvideo>
+        <seekvideo id="836018">of civil rights activists and libertarians,</seekvideo>
+        <seekvideo id="839349">of young people taking to the streets to protest police violence</seekvideo>
+        <seekvideo id="843329">against unarmed black teenagers,</seekvideo>
+        <seekvideo id="846165">and older, wealthier people --</seekvideo>
+        <seekvideo id="848211">some of you are here in the audience --</seekvideo>
+        <seekvideo id="850082">pumping big money into decarceration initiatives</seekvideo>
+        <seekvideo id="855357">In a deeply divided Congress,</seekvideo>
+        <seekvideo id="857107">the work of reforming our criminal justice system</seekvideo>
+        <seekvideo id="859810">is just about the only thing that the right and the left</seekvideo>
+        <seekvideo id="862602">are coming together on.</seekvideo>
+        <seekvideo id="865187">I did not think I would see this political moment in my lifetime.</seekvideo>
+        <seekvideo id="869102">I think many of the people who have been working tirelessly</seekvideo>
+        <seekvideo id="872710">to write about the causes and consequences</seekvideo>
+        <seekvideo id="874872">of our historically high incarceration rates</seekvideo>
+        <seekvideo id="877104">did not think we would see this moment in our lifetime.</seekvideo>
+        <seekvideo id="880870">The question for us now is, how much can we make of it?</seekvideo>
+        <seekvideo id="884653">How much can we change?</seekvideo>
+        <seekvideo id="887618">I want to end with a call to young people,</seekvideo>
+        <seekvideo id="890182">the young people attending college</seekvideo>
+        <seekvideo id="891816">and the young people struggling to stay out of prison</seekvideo>
+        <seekvideo id="894926">or to make it through prison and return home.</seekvideo>
+        <seekvideo id="898030">It may seem like these paths to adulthood are worlds apart,</seekvideo>
+        <seekvideo id="902063">but the young people participating in these two institutions</seekvideo>
+        <seekvideo id="906505">conveying us to adulthood,</seekvideo>
+        <seekvideo id="908430">they have one thing in common:</seekvideo>
+        <seekvideo id="910995">Both can be leaders in the work of reforming our criminal justice system.</seekvideo>
+        <seekvideo id="916483">Young people have always been leaders in the fight for equal rights,</seekvideo>
+        <seekvideo id="919815">the fight for more people to be granted dignity</seekvideo>
+        <seekvideo id="922080">and a fighting chance at freedom.</seekvideo>
+        <seekvideo id="924635">The mission for the generation of young people</seekvideo>
+        <seekvideo id="927014">coming of age in this, a sea-change moment, potentially,</seekvideo>
+        <seekvideo id="931994">is to end mass incarceration and build a new criminal justice system,</seekvideo>
+        <seekvideo id="937258">emphasis on the word justice.</seekvideo>
+        <seekvideo id="940185">Thanks.</seekvideo>
+        <seekvideo id="941589">(Applause)</seekvideo>
+      </transcription>
+      <wordnum>2436</wordnum>
+      <charnum>13700</charnum>
+    </head>
+    <content>On the path that American children travel to adulthood, two institutions oversee the journey. The first is the one we hear a lot about: college. Some of you may remember the excitement that you felt when you first set off for college. Some of you may be in college right now and you're feeling this excitement at this very moment.
+  College has some shortcomings. It's expensive; it leaves young people in debt. But all in all, it's a pretty good path. Young people emerge from college with pride and with great friends and with a lot of knowledge about the world. And perhaps most importantly, a better chance in the labor market than they had before they got there.
+  Today I want to talk about the second institution overseeing the journey from childhood to adulthood in the United States. And that institution is prison. Young people on this journey are meeting with probation officers instead of with teachers. They're going to court dates instead of to class. Their junior year abroad is instead a trip to a state correctional facility. And they're emerging from their 20s not with degrees in business and English, but with criminal records.
+  This institution is also costing us a lot, about 40,000 dollars a year to send a young person to prison in New Jersey. But here, taxpayers are footing the bill and what kids are getting is a cold prison cell and a permanent mark against them when they come home and apply for work.
+  There are more and more kids on this journey to adulthood than ever before in the United States and that's because in the past 40 years, our incarceration rate has grown by 700 percent. I have one slide for this talk. Here it is. Here's our incarceration rate, about 716 people per 100,000 in the population. Here's the OECD countries.
+  What's more, it's poor kids that we're sending to prison, too many drawn from African-American and Latino communities so that prison now stands firmly between the young people trying to make it and the fulfillment of the American Dream. The problem's actually a bit worse than this 'cause we're not just sending poor kids to prison, we're saddling poor kids with court fees, with probation and parole restrictions, with low-level warrants, we're asking them to live in halfway houses and on house arrest, and we're asking them to negotiate a police force that is entering poor communities of color, not for the purposes of promoting public safety, but to make arrest counts, to line city coffers.
+  This is the hidden underside to our historic experiment in punishment: young people worried that at any moment, they will be stopped, searched and seized. Not just in the streets, but in their homes, at school and at work.
+  I got interested in this other path to adulthood when I was myself a college student attending the University of Pennsylvania in the early 2000s. Penn sits within a historic African-American neighborhood. So you've got these two parallel journeys going on simultaneously: the kids attending this elite, private university, and the kids from the adjacent neighborhood, some of whom are making it to college, and many of whom are being shipped to prison.
+  In my sophomore year, I started tutoring a young woman who was in high school who lived about 10 minutes away from the university. Soon, her cousin came home from a juvenile detention center. He was 15, a freshman in high school. I began to get to know him and his friends and family, and I asked him what he thought about me writing about his life for my senior thesis in college. This senior thesis became a dissertation at Princeton and now a book.
+  By the end of my sophomore year, I moved into the neighborhood and I spent the next six years
+  trying to understand what young people were facing as they came of age. The first week I spent in this neighborhood, I saw two boys, five and seven years old, play this game of chase, where the older boy ran after the other boy. He played the cop. When the cop caught up to the younger boy, he pushed him down, handcuffed him with imaginary handcuffs, took a quarter out of the other child's pocket, saying, "I'm seizing that." He asked the child if he was carrying any drugs or if he had a warrant. Many times, I saw this game repeated, sometimes children would simply give up running, and stick their bodies flat against the ground with their hands above their heads, or flat up against a wall. Children would yell at each other, "I'm going to lock you up, I'm going to lock you up and you're never coming home!" Once I saw a six-year-old child pull another child's pants down and try to do a cavity search.
+  In the first 18 months that I lived in this neighborhood, I wrote down every time I saw any contact between police and people that were my neighbors. So in the first 18 months, I watched the police stop pedestrians or people in cars, search people, run people's names, chase people through the streets, pull people in for questioning, or make an arrest every single day, with five exceptions. Fifty-two times, I watched the police break down doors, chase people through houses or make an arrest of someone in their home. Fourteen times in this first year and a half, I watched the police punch, choke, kick, stomp on or beat young men after they had caught them.
+  Bit by bit, I got to know two brothers, Chuck and Tim. Chuck was 18 when we met, a senior in high school. He was playing on the basketball team and making C's and B's. His younger brother, Tim, was 10. And Tim loved Chuck; he followed him around a lot, looked to Chuck to be a mentor. They lived with their mom and grandfather in a two-story row home with a front lawn and a back porch. Their mom was struggling with addiction all while the boys were growing up. She never really was able to hold down a job for very long. It was their grandfather's pension that supported the family, not really enough to pay for food and clothes and school supplies for growing boys. The family was really struggling.
+  So when we met, Chuck was a senior in high school. He had just turned 18. That winter, a kid in the schoolyard called Chuck's mom a crack whore. Chuck pushed the kid's face into the snow and the school cops charged him with aggravated assault. The other kid was fine the next day, I think it was his pride that was injured more than anything.
+  But anyway, since Chuck was 18, this agg. assault case sent him to adult county jail on State Road in northeast Philadelphia, where he sat, unable to pay the bail -- he couldn't afford it -- while the trial dates dragged on and on and on through almost his entire senior year. Finally, near the end of this season, the judge on this assault case threw out most of the charges and Chuck came home with only a few hundred dollars' worth of court fees hanging over his head. Tim was pretty happy that day.
+  The next fall, Chuck tried to re-enroll as a senior, but the school secretary told him that he was then 19 and too old to be readmitted. Then the judge on his assault case issued him a warrant for his arrest because he couldn't pay the 225 dollars in court fees that came due a few weeks after the case ended. Then he was a high school dropout living on the run.
+  Tim's first arrest came later that year after he turned 11. Chuck had managed to get his warrant lifted and he was on a payment plan for the court fees and he was driving Tim to school in his girlfriend's car. So a cop pulls them over, runs the car, and the car comes up as stolen in California. Chuck had no idea where in the history of this car it had been stolen. His girlfriend's uncle bought it from a used car auction in northeast Philly. Chuck and Tim had never been outside of the tri-state, let alone to California. But anyway, the cops down at the precinct charged Chuck with receiving stolen property. And then a juvenile judge, a few days later, charged Tim, age 11, with accessory to receiving a stolen property and then he was placed on three years of probation. With this probation sentence hanging over his head,
+  Chuck sat his little brother down and began teaching him how to run from the police. They would sit side by side on their back porch looking out into the shared alleyway and Chuck would coach Tim how to spot undercover cars, how to negotiate a late-night police raid, how and where to hide.
+  I want you to imagine for a second what Chuck and Tim's lives would be like if they were living in a neighborhood where kids were going to college, not prison. A neighborhood like the one I got to grow up in. Okay, you might say. But Chuck and Tim, kids like them, they're committing crimes! Don't they deserve to be in prison? Don't they deserve to be living in fear of arrest? Well, my answer would be no. They don't. And certainly not for the same things that other young people with more privilege are doing with impunity. If Chuck had gone to my high school, that schoolyard fight would have ended there, as a schoolyard fight. It never would have become an aggravated assault case. Not a single kid that I went to college with has a criminal record right now. Not a single one. But can you imagine how many might have if the police had stopped those kids and searched their pockets for drugs as they walked to class? Or had raided their frat parties in the middle of the night?
+  Okay, you might say. But doesn't this high incarceration rate partly account for our really low crime rate? Crime is down. That's a good thing. Totally, that is a good thing. Crime is down. It dropped precipitously in the '90s and through the 2000s. But according to a committee of academics convened by the National Academy of Sciences last year, the relationship between our historically high incarceration rates and our low crime rate is pretty shaky. It turns out that the crime rate goes up and down irrespective of how many young people we send to prison.
+  We tend to think about justice in a pretty narrow way: good and bad, innocent and guilty. Injustice is about being wrongfully convicted. So if you're convicted of something you did do, you should be punished for it. There are innocent and guilty people, there are victims and there are perpetrators. Maybe we could think a little bit more broadly than that.
+  Right now, we're asking kids who live in the most disadvantaged neighborhoods, who have the least amount of family resources, who are attending the country's worst schools, who are facing the toughest time in the labor market, who are living in neighborhoods where violence is an everyday problem, we're asking these kids to walk the thinnest possible line -- to basically never do anything wrong.
+  Why are we not providing support to young kids facing these challenges? Why are we offering only handcuffs, jail time and this fugitive existence? Can we imagine something better? Can we imagine a criminal justice system that prioritizes recovery, prevention, civic inclusion, rather than punishment? (Applause) A criminal justice system that acknowledges the legacy of exclusion that poor people of color in the U.S. have faced and that does not promote and perpetuate those exclusions. (Applause) And finally, a criminal justice system that believes in black young people, rather than treating black young people as the enemy to be rounded up. (Applause)
+  The good news is that we already are. A few years ago, Michelle Alexander wrote "The New Jim Crow," which got Americans to see incarceration as a civil rights issue of historic proportions in a way they had not seen it before. President Obama and Attorney General Eric Holder have come out very strongly on sentencing reform, on the need to address racial disparity in incarceration. We're seeing states throw out Stop and Frisk as the civil rights violation that it is. We're seeing cities and states decriminalize possession of marijuana. New York, New Jersey and California have been dropping their prison populations, closing prisons, while also seeing a big drop in crime. Texas has gotten into the game now, also closing prisons, investing in education. This curious coalition is building from the right and the left, made up of former prisoners and fiscal conservatives, of civil rights activists and libertarians, of young people taking to the streets to protest police violence against unarmed black teenagers, and older, wealthier people -- some of you are here in the audience -- pumping big money into decarceration initiatives In a deeply divided Congress, the work of reforming our criminal justice system is just about the only thing that the right and the left are coming together on.
+  I did not think I would see this political moment in my lifetime. I think many of the people who have been working tirelessly to write about the causes and consequences of our historically high incarceration rates did not think we would see this moment in our lifetime. The question for us now is, how much can we make of it? How much can we change?
+  I want to end with a call to young people, the young people attending college and the young people struggling to stay out of prison or to make it through prison and return home. It may seem like these paths to adulthood are worlds apart, but the young people participating in these two institutions conveying us to adulthood, they have one thing in common: Both can be leaders in the work of reforming our criminal justice system. Young people have always been leaders in the fight for equal rights, the fight for more people to be granted dignity and a fighting chance at freedom. The mission for the generation of young people coming of age in this, a sea-change moment, potentially, is to end mass incarceration and build a new criminal justice system, emphasis on the word justice.
+  Thanks.
+  (Applause)</content>
+  </file>
+  <file id="442">
+    <head>
+      <url>http://www.ted.com/talks/wendy_chung_autism_what_we_know_and_what_we_don_t_know_yet</url>
+      <pagesize>85917</pagesize>
+      <dtime>Thu Jan 28 13:07:36 CET 2016</dtime>
+      <encoding>UTF-8</encoding>
+      <content-type>text/html; charset=utf-8</content-type>
+      <keywords>talks, Autism spectrum disorder, TED Conference, cognitive science, genetics, health, neuroscience, science</keywords>
+      <speaker>Wendy Chung</speaker>
+      <talkid>1985</talkid>
+      <videourl>http://download.ted.com/talks/WendyChung_2014.mp4</videourl>
+      <videopath>talks/WendyChung_2014.mp4</videopath>
+      <date>2014/03/20</date>
+      <title>Wendy Chung: Autism — what we know (and what we don’t know yet)</title>
+      <description>TED Talk Subtitles and Transcript: In this factual talk, geneticist Wendy Chung shares what we know about autism spectrum disorder — for example, that autism has multiple, perhaps interlocking, causes. Looking beyond the worry and concern that can surround a diagnosis, Chung and her team look at what we’ve learned through studies, treatments and careful listening.</description>
+      <transcription>
+        <seekvideo id="722">"Why?"</seekvideo>
+        <seekvideo id="2231">"Why?" is a question</seekvideo>
+        <seekvideo id="3689">that parents ask me all the time.</seekvideo>
+        <seekvideo id="6325">"Why did my child develop autism?"</seekvideo>
+        <seekvideo id="9172">As a pediatrician, as a geneticist, as a researcher,</seekvideo>
+        <seekvideo id="13626">we try and address that question.</seekvideo>
+        <seekvideo id="16069">But autism is not a single condition.</seekvideo>
+        <seekvideo id="18018">It's actually a spectrum of disorders,</seekvideo>
+        <seekvideo id="20733">a spectrum that ranges, for instance,</seekvideo>
+        <seekvideo id="23267">from Justin, a 13-year-old boy</seekvideo>
+        <seekvideo id="25940">who's not verbal, who can't speak,</seekvideo>
+        <seekvideo id="29163">who communicates by using an iPad</seekvideo>
+        <seekvideo id="31125">to touch pictures to communicate</seekvideo>
+        <seekvideo id="33023">his thoughts and his concerns,</seekvideo>
+        <seekvideo id="35174">a little boy who, when he gets upset,</seekvideo>
+        <seekvideo id="37585">will start rocking,</seekvideo>
+        <seekvideo id="39233">and eventually, when he's disturbed enough,</seekvideo>
+        <seekvideo id="40830">will bang his head to the point</seekvideo>
+        <seekvideo id="42433">that he can actually cut it open and require stitches.</seekvideo>
+        <seekvideo id="46275">That same diagnosis of autism, though,</seekvideo>
+        <seekvideo id="48890">also applies to Gabriel,</seekvideo>
+        <seekvideo id="50812">another 13-year-old boy</seekvideo>
+        <seekvideo id="52779">who has quite a different set of challenges.</seekvideo>
+        <seekvideo id="55474">He's actually quite remarkably gifted in mathematics.</seekvideo>
+        <seekvideo id="58588">He can multiple three numbers by three numbers</seekvideo>
+        <seekvideo id="60609">in his head with ease,</seekvideo>
+        <seekvideo id="62396">yet when it comes to trying to have a conversation,</seekvideo>
+        <seekvideo id="66154">he has great difficulty.</seekvideo>
+        <seekvideo id="68215">He doesn't make eye contact.</seekvideo>
+        <seekvideo id="70274">He has difficulty starting a conversation,</seekvideo>
+        <seekvideo id="72397">feels awkward,</seekvideo>
+        <seekvideo id="74132">and when he gets nervous,</seekvideo>
+        <seekvideo id="75950">he actually shuts down.</seekvideo>
+        <seekvideo id="77675">Yet both of these boys</seekvideo>
+        <seekvideo id="79157">have the same diagnosis of autism spectrum disorder.</seekvideo>
+        <seekvideo id="83341">One of the things that concerns us</seekvideo>
+        <seekvideo id="85769">is whether or not there really is</seekvideo>
+        <seekvideo id="87366">an epidemic of autism.</seekvideo>
+        <seekvideo id="89339">These days, one in 88 children</seekvideo>
+        <seekvideo id="91819">will be diagnosed with autism,</seekvideo>
+        <seekvideo id="93861">and the question is,</seekvideo>
+        <seekvideo id="95334">why does this graph look this way?</seekvideo>
+        <seekvideo id="97337">Has that number been increasing</seekvideo>
+        <seekvideo id="99304">dramatically over time?</seekvideo>
+        <seekvideo id="101238">Or is it because we have now started labeling</seekvideo>
+        <seekvideo id="105769">individuals with autism,</seekvideo>
+        <seekvideo id="107331">simply giving them a diagnosis</seekvideo>
+        <seekvideo id="109579">when they were still present there before</seekvideo>
+        <seekvideo id="112132">yet simply didn't have that label?</seekvideo>
+        <seekvideo id="114525">And in fact, in the late 1980s, the early 1990s,</seekvideo>
+        <seekvideo id="118516">legislation was passed</seekvideo>
+        <seekvideo id="119926">that actually provided individuals with autism</seekvideo>
+        <seekvideo id="122565">with resources, with access to educational materials</seekvideo>
+        <seekvideo id="126291">that would help them.</seekvideo>
+        <seekvideo id="128063">With that increased awareness, more parents,</seekvideo>
+        <seekvideo id="131551">more pediatricians, more educators</seekvideo>
+        <seekvideo id="134297">learned to recognize the features of autism.</seekvideo>
+        <seekvideo id="137552">As a result of that, more individuals were diagnosed</seekvideo>
+        <seekvideo id="141562">and got access to the resources they needed.</seekvideo>
+        <seekvideo id="144750">In addition, we've changed our definition over time,</seekvideo>
+        <seekvideo id="148182">so in fact we've widened the definition of autism,</seekvideo>
+        <seekvideo id="151320">and that accounts for some of</seekvideo>
+        <seekvideo id="152440">the increased prevalence that we see.</seekvideo>
+        <seekvideo id="155455">The next question everyone wonders is,</seekvideo>
+        <seekvideo id="158115">what caused autism?</seekvideo>
+        <seekvideo id="159891">And a common misconception</seekvideo>
+        <seekvideo id="162786">is that vaccines cause autism.</seekvideo>
+        <seekvideo id="165570">But let me be very clear:</seekvideo>
+        <seekvideo id="168621">Vaccines do not cause autism.</seekvideo>
+        <seekvideo id="173108">(Applause)</seekvideo>
+        <seekvideo id="179812">In fact, the original research study</seekvideo>
+        <seekvideo id="181935">that suggested that was the case</seekvideo>
+        <seekvideo id="183934">was completely fraudulent.</seekvideo>
+        <seekvideo id="186809">It was actually retracted from the journal Lancet,</seekvideo>
+        <seekvideo id="189985">in which it was published,</seekvideo>
+        <seekvideo id="191577">and that author, a physician,</seekvideo>
+        <seekvideo id="193467">had his medical license taken away from him.</seekvideo>
+        <seekvideo id="196721">(Applause)</seekvideo>
+        <seekvideo id="200675">The Institute of Medicine,</seekvideo>
+        <seekvideo id="202257">The Centers for Disease Control,</seekvideo>
+        <seekvideo id="203820">have repeatedly investigated this</seekvideo>
+        <seekvideo id="206164">and there is no credible evidence</seekvideo>
+        <seekvideo id="209771">that vaccines cause autism.</seekvideo>
+        <seekvideo id="212456">Furthermore,</seekvideo>
+        <seekvideo id="214093">one of the ingredients in vaccines,</seekvideo>
+        <seekvideo id="216562">something called thimerosal,</seekvideo>
+        <seekvideo id="218614">was thought to be what the cause of autism was.</seekvideo>
+        <seekvideo id="221930">That was actually removed from vaccines</seekvideo>
+        <seekvideo id="224193">in the year 1992,</seekvideo>
+        <seekvideo id="225918">and you can see that it really did not have an effect</seekvideo>
+        <seekvideo id="228962">in what happened with the prevalence of autism.</seekvideo>
+        <seekvideo id="231601">So again, there is no evidence</seekvideo>
+        <seekvideo id="233334">that this is the answer.</seekvideo>
+        <seekvideo id="235416">So the question remains, what does cause autism?</seekvideo>
+        <seekvideo id="239559">In fact, there's probably not one single answer.</seekvideo>
+        <seekvideo id="242390">Just as autism is a spectrum,</seekvideo>
+        <seekvideo id="244147">there's a spectrum of etiologies,</seekvideo>
+        <seekvideo id="246337">a spectrum of causes.</seekvideo>
+        <seekvideo id="247989">Based on epidemiological data,</seekvideo>
+        <seekvideo id="249980">we know that one of the causes,</seekvideo>
+        <seekvideo id="251773">or one of the associations, I should say,</seekvideo>
+        <seekvideo id="253930">is advanced paternal age,</seekvideo>
+        <seekvideo id="256214">that is, increasing age of the father</seekvideo>
+        <seekvideo id="258151">at the time of conception.</seekvideo>
+        <seekvideo id="260330">In addition, another vulnerable</seekvideo>
+        <seekvideo id="262474">and critical period in terms of development</seekvideo>
+        <seekvideo id="265104">is when the mother is pregnant.</seekvideo>
+        <seekvideo id="267010">During that period, while the fetal brain is developing,</seekvideo>
+        <seekvideo id="270000">we know that exposure to certain agents</seekvideo>
+        <seekvideo id="271942">can actually increase the risk of autism.</seekvideo>
+        <seekvideo id="275027">In particular, there's a medication, valproic acid,</seekvideo>
+        <seekvideo id="277962">which mothers with epilepsy sometimes take,</seekvideo>
+        <seekvideo id="280548">we know can increase that risk of autism.</seekvideo>
+        <seekvideo id="284220">In addition, there can be some infectious agents</seekvideo>
+        <seekvideo id="286519">that can also cause autism.</seekvideo>
+        <seekvideo id="289419">And one of the things I'm going to spend</seekvideo>
+        <seekvideo id="290999">a lot of time focusing on</seekvideo>
+        <seekvideo id="293060">are the genes that can cause autism.</seekvideo>
+        <seekvideo id="295621">I'm focusing on this not because genes</seekvideo>
+        <seekvideo id="298077">are the only cause of autism,</seekvideo>
+        <seekvideo id="300221">but it's a cause of autism</seekvideo>
+        <seekvideo id="301790">that we can readily define</seekvideo>
+        <seekvideo id="303667">and be able to better understand the biology</seekvideo>
+        <seekvideo id="306460">and understand better how the brain works</seekvideo>
+        <seekvideo id="308729">so that we can come up with strategies</seekvideo>
+        <seekvideo id="310714">to be able to intervene.</seekvideo>
+        <seekvideo id="313044">One of the genetic factors that we don't understand,</seekvideo>
+        <seekvideo id="315990">however, is the difference that we see</seekvideo>
+        <seekvideo id="319138">in terms of males and females.</seekvideo>
+        <seekvideo id="321044">Males are affected four to one compared to females</seekvideo>
+        <seekvideo id="324049">with autism,</seekvideo>
+        <seekvideo id="325151">and we really don't understand what that cause is.</seekvideo>
+        <seekvideo id="329142">One of the ways that we can understand</seekvideo>
+        <seekvideo id="330860">that genetics is a factor</seekvideo>
+        <seekvideo id="332723">is by looking at something called</seekvideo>
+        <seekvideo id="334060">the concordance rate.</seekvideo>
+        <seekvideo id="335950">In other words, if one sibling has autism,</seekvideo>
+        <seekvideo id="339138">what's the probability</seekvideo>
+        <seekvideo id="340625">that another sibling in that family will have autism?</seekvideo>
+        <seekvideo id="343629">And we can look in particular</seekvideo>
+        <seekvideo id="345194">at three types of siblings:</seekvideo>
+        <seekvideo id="347362">identical twins,</seekvideo>
+        <seekvideo id="349233">twins that actually share 100 percent</seekvideo>
+        <seekvideo id="351452">of their genetic information</seekvideo>
+        <seekvideo id="353054">and shared the same intrauterine environment,</seekvideo>
+        <seekvideo id="356230">versus fraternal twins,</seekvideo>
+        <seekvideo id="358475">twins that actually share 50 percent</seekvideo>
+        <seekvideo id="360464">of their genetic information,</seekvideo>
+        <seekvideo id="362491">versus regular siblings,</seekvideo>
+        <seekvideo id="363707">brother-sister, sister-sister,</seekvideo>
+        <seekvideo id="365576">also sharing 50 percent of their genetic information,</seekvideo>
+        <seekvideo id="368444">yet not sharing the same intrauterine environment.</seekvideo>
+        <seekvideo id="371523">And when you look at those concordance ratios,</seekvideo>
+        <seekvideo id="373823">one of the striking things that you will see</seekvideo>
+        <seekvideo id="375880">is that in identical twins,</seekvideo>
+        <seekvideo id="378000">that concordance rate is 77 percent.</seekvideo>
+        <seekvideo id="381353">Remarkably, though,</seekvideo>
+        <seekvideo id="382457">it's not 100 percent.</seekvideo>
+        <seekvideo id="384605">It is not that genes account for all of the risk for autism,</seekvideo>
+        <seekvideo id="388608">but yet they account for a lot of that risk,</seekvideo>
+        <seekvideo id="390849">because when you look at fraternal twins,</seekvideo>
+        <seekvideo id="393162">that concordance rate is only 31 percent.</seekvideo>
+        <seekvideo id="396238">On the other hand, there is a difference</seekvideo>
+        <seekvideo id="398149">between those fraternal twins and the siblings,</seekvideo>
+        <seekvideo id="401092">suggesting that there are common exposures</seekvideo>
+        <seekvideo id="403756">for those fraternal twins</seekvideo>
+        <seekvideo id="405179">that may not be shared as commonly</seekvideo>
+        <seekvideo id="407296">with siblings alone.</seekvideo>
+        <seekvideo id="409470">So this provides some of the data</seekvideo>
+        <seekvideo id="411156">that autism is genetic.</seekvideo>
+        <seekvideo id="412778">Well, how genetic is it?</seekvideo>
+        <seekvideo id="414742">When we compare it to other conditions</seekvideo>
+        <seekvideo id="416585">that we're familiar with,</seekvideo>
+        <seekvideo id="418197">things like cancer, heart disease, diabetes,</seekvideo>
+        <seekvideo id="422077">in fact, genetics plays a much larger role in autism</seekvideo>
+        <seekvideo id="426030">than it does in any of these other conditions.</seekvideo>
+        <seekvideo id="428470">But with this, that doesn't tell us what the genes are.</seekvideo>
+        <seekvideo id="431812">It doesn't even tell us in any one child,</seekvideo>
+        <seekvideo id="434479">is it one gene</seekvideo>
+        <seekvideo id="436140">or potentially a combination of genes?</seekvideo>
+        <seekvideo id="438396">And so in fact, in some individuals with autism,</seekvideo>
+        <seekvideo id="441950">it is genetic!</seekvideo>
+        <seekvideo id="444464">That is, that it is one single,</seekvideo>
+        <seekvideo id="446694">powerful, deterministic gene</seekvideo>
+        <seekvideo id="448866">that causes the autism.</seekvideo>
+        <seekvideo id="450713">However, in other individuals,</seekvideo>
+        <seekvideo id="452507">it's genetic, that is,</seekvideo>
+        <seekvideo id="454213">that it's actually a combination of genes</seekvideo>
+        <seekvideo id="457333">in part with the developmental process</seekvideo>
+        <seekvideo id="460128">that ultimately determines that risk for autism.</seekvideo>
+        <seekvideo id="463508">We don't know in any one person, necessarily,</seekvideo>
+        <seekvideo id="466378">which of those two answers it is</seekvideo>
+        <seekvideo id="468471">until we start digging deeper.</seekvideo>
+        <seekvideo id="470512">So the question becomes,</seekvideo>
+        <seekvideo id="471799">how can we start to identify</seekvideo>
+        <seekvideo id="474040">what exactly those genes are.</seekvideo>
+        <seekvideo id="475912">And let me pose something</seekvideo>
+        <seekvideo id="477021">that might not be intuitive.</seekvideo>
+        <seekvideo id="479211">In certain individuals,</seekvideo>
+        <seekvideo id="481570">they can have autism</seekvideo>
+        <seekvideo id="483294">for a reason that is genetic</seekvideo>
+        <seekvideo id="485747">but yet not because of autism running in the family.</seekvideo>
+        <seekvideo id="489311">And the reason is because in certain individuals,</seekvideo>
+        <seekvideo id="491690">they can actually have genetic changes or mutations</seekvideo>
+        <seekvideo id="494751">that are not passed down from the mother</seekvideo>
+        <seekvideo id="497794">or from the father,</seekvideo>
+        <seekvideo id="499281">but actually start brand new in them,</seekvideo>
+        <seekvideo id="502014">mutations that are present</seekvideo>
+        <seekvideo id="503601">in the egg or the sperm</seekvideo>
+        <seekvideo id="505004">at the time of conception</seekvideo>
+        <seekvideo id="506617">but have not been passed down</seekvideo>
+        <seekvideo id="508359">generation through generation within the family.</seekvideo>
+        <seekvideo id="511365">And we can actually use that strategy</seekvideo>
+        <seekvideo id="513546">to now understand and to identify</seekvideo>
+        <seekvideo id="515880">those genes causing autism in those individuals.</seekvideo>
+        <seekvideo id="518980">So in fact, at the Simons Foundation,</seekvideo>
+        <seekvideo id="520990">we took 2,600 individuals</seekvideo>
+        <seekvideo id="523716">that had no family history of autism,</seekvideo>
+        <seekvideo id="526427">and we took that child and their mother and father</seekvideo>
+        <seekvideo id="529597">and used them to try and understand</seekvideo>
+        <seekvideo id="532068">what were those genes</seekvideo>
+        <seekvideo id="533687">causing autism in those cases?</seekvideo>
+        <seekvideo id="536005">To do that, we actually had to comprehensively</seekvideo>
+        <seekvideo id="539072">be able to look at all that genetic information</seekvideo>
+        <seekvideo id="541802">and determine what those differences were</seekvideo>
+        <seekvideo id="543984">between the mother, the father and the child.</seekvideo>
+        <seekvideo id="547685">In doing so, I apologize,</seekvideo>
+        <seekvideo id="549639">I'm going to use an outdated analogy</seekvideo>
+        <seekvideo id="551523">of encyclopedias rather than Wikipedia,</seekvideo>
+        <seekvideo id="554181">but I'm going to do so to try and help make the point</seekvideo>
+        <seekvideo id="557180">that as we did this inventory,</seekvideo>
+        <seekvideo id="559538">we needed to be able to look at</seekvideo>
+        <seekvideo id="561131">massive amounts of information.</seekvideo>
+        <seekvideo id="563304">Our genetic information is organized</seekvideo>
+        <seekvideo id="565591">into a set of 46 volumes,</seekvideo>
+        <seekvideo id="568478">and when we did that, we had to be able to account</seekvideo>
+        <seekvideo id="570387">for each of those 46 volumes,</seekvideo>
+        <seekvideo id="572371">because in some cases with autism,</seekvideo>
+        <seekvideo id="574224">there's actually a single volume that's missing.</seekvideo>
+        <seekvideo id="576680">We had to get more granular than that, though,</seekvideo>
+        <seekvideo id="578990">and so we had to start opening those books,</seekvideo>
+        <seekvideo id="581310">and in some cases, the genetic change</seekvideo>
+        <seekvideo id="583190">was more subtle.</seekvideo>
+        <seekvideo id="584578">It might have been a single paragraph that was missing,</seekvideo>
+        <seekvideo id="587764">or yet, even more subtle than that,</seekvideo>
+        <seekvideo id="591042">a single letter,</seekvideo>
+        <seekvideo id="592734">one out of three billion letters</seekvideo>
+        <seekvideo id="595536">that was changed, that was altered,</seekvideo>
+        <seekvideo id="597810">yet had profound effects</seekvideo>
+        <seekvideo id="599407">in terms of how the brain functions</seekvideo>
+        <seekvideo id="601320">and affects behavior.</seekvideo>
+        <seekvideo id="603137">In doing this within these families,</seekvideo>
+        <seekvideo id="605514">we were able to account for approximately</seekvideo>
+        <seekvideo id="607832">25 percent of the individuals</seekvideo>
+        <seekvideo id="610157">and determine that there was a single</seekvideo>
+        <seekvideo id="612704">powerful genetic factor</seekvideo>
+        <seekvideo id="614900">that caused autism within those families.</seekvideo>
+        <seekvideo id="618024">On the other hand, there's 75 percent</seekvideo>
+        <seekvideo id="620276">that we still haven't figured out.</seekvideo>
+        <seekvideo id="622727">As we did this, though,</seekvideo>
+        <seekvideo id="624197">it was really quite humbling,</seekvideo>
+        <seekvideo id="626291">because we realized that there was not simply</seekvideo>
+        <seekvideo id="628656">one gene for autism.</seekvideo>
+        <seekvideo id="630597">In fact, the current estimates are</seekvideo>
+        <seekvideo id="632346">that there are 200 to 400 different genes</seekvideo>
+        <seekvideo id="635098">that can cause autism.</seekvideo>
+        <seekvideo id="636990">And that explains, in part,</seekvideo>
+        <seekvideo id="638359">why we see such a broad spectrum</seekvideo>
+        <seekvideo id="640476">in terms of its effects.</seekvideo>
+        <seekvideo id="642519">Although there are that many genes,</seekvideo>
+        <seekvideo id="644744">there is some method to the madness.</seekvideo>
+        <seekvideo id="647092">It's not simply random</seekvideo>
+        <seekvideo id="649040">200, 400 different genes,</seekvideo>
+        <seekvideo id="651270">but in fact they fit together.</seekvideo>
+        <seekvideo id="653064">They fit together in a pathway.</seekvideo>
+        <seekvideo id="654930">They fit together in a network</seekvideo>
+        <seekvideo id="656402">that's starting to make sense now</seekvideo>
+        <seekvideo id="658234">in terms of how the brain functions.</seekvideo>
+        <seekvideo id="660932">We're starting to have a bottom-up approach</seekvideo>
+        <seekvideo id="663078">where we're identifying those genes,</seekvideo>
+        <seekvideo id="664787">those proteins, those molecules,</seekvideo>
+        <seekvideo id="667265">understanding how they interact together</seekvideo>
+        <seekvideo id="669175">to make that neuron work,</seekvideo>
+        <seekvideo id="670572">understanding how those neurons interact together</seekvideo>
+        <seekvideo id="673309">to make circuits work,</seekvideo>
+        <seekvideo id="674528">and understand how those circuits work</seekvideo>
+        <seekvideo id="676544">to now control behavior,</seekvideo>
+        <seekvideo id="678370">and understand that both in individuals with autism</seekvideo>
+        <seekvideo id="681170">as well as individuals who have normal cognition.</seekvideo>
+        <seekvideo id="685071">But early diagnosis is a key for us.</seekvideo>
+        <seekvideo id="687529">Being able to make that diagnosis</seekvideo>
+        <seekvideo id="689488">of someone who's susceptible</seekvideo>
+        <seekvideo id="690995">at a time in a window</seekvideo>
+        <seekvideo id="693050">where we have the ability to transform,</seekvideo>
+        <seekvideo id="695397">to be able to impact</seekvideo>
+        <seekvideo id="697000">that growing, developing brain is critical.</seekvideo>
+        <seekvideo id="699740">And so folks like Ami Klin have developed methods</seekvideo>
+        <seekvideo id="703549">to be able to take infants, small babies,</seekvideo>
+        <seekvideo id="706117">and be able to use biomarkers,</seekvideo>
+        <seekvideo id="708650">in this case eye contact and eye tracking,</seekvideo>
+        <seekvideo id="711988">to identify an infant at risk.</seekvideo>
+        <seekvideo id="714074">This particular infant, you can see,</seekvideo>
+        <seekvideo id="716239">making very good eye contact with this woman</seekvideo>
+        <seekvideo id="718440">as she's singing "Itsy, Bitsy Spider,"</seekvideo>
+        <seekvideo id="720800">in fact is not going to develop autism.</seekvideo>
+        <seekvideo id="723840">This baby we know is going to be in the clear.</seekvideo>
+        <seekvideo id="726720">On the other hand, this other baby</seekvideo>
+        <seekvideo id="729080">is going to go on to develop autism.</seekvideo>
+        <seekvideo id="731415">In this particular child, you can see,</seekvideo>
+        <seekvideo id="733642">it's not making good eye contact.</seekvideo>
+        <seekvideo id="735843">Instead of the eyes focusing in</seekvideo>
+        <seekvideo id="737810">and having that social connection,</seekvideo>
+        <seekvideo id="740088">looking at the mouth, looking at the nose,</seekvideo>
+        <seekvideo id="742726">looking off in another direction,</seekvideo>
+        <seekvideo id="744509">but not again socially connecting,</seekvideo>
+        <seekvideo id="747422">and being able to do this on a very large scale,</seekvideo>
+        <seekvideo id="750135">screen infants, screen children for autism,</seekvideo>
+        <seekvideo id="753135">through something very robust, very reliable,</seekvideo>
+        <seekvideo id="756059">is going to be very helpful to us in terms of being</seekvideo>
+        <seekvideo id="758775">able to intervene at an early stage</seekvideo>
+        <seekvideo id="760869">when we can have the greatest impact.</seekvideo>
+        <seekvideo id="764301">How are we going to intervene?</seekvideo>
+        <seekvideo id="766547">It's probably going to be a combination of factors.</seekvideo>
+        <seekvideo id="769377">In part, in some individuals,</seekvideo>
+        <seekvideo id="771416">we're going to try and use medications.</seekvideo>
+        <seekvideo id="773295">And so in fact, identifying the genes for autism</seekvideo>
+        <seekvideo id="776017">is important for us</seekvideo>
+        <seekvideo id="777543">to identify drug targets,</seekvideo>
+        <seekvideo id="779409">to identify things that we might be able to impact</seekvideo>
+        <seekvideo id="782032">and can be certain that that's really</seekvideo>
+        <seekvideo id="783730">what we need to do in autism.</seekvideo>
+        <seekvideo id="785425">But that's not going to be the only answer.</seekvideo>
+        <seekvideo id="788166">Beyond just drugs, we're going to use educational strategies.</seekvideo>
+        <seekvideo id="791676">Individuals with autism,</seekvideo>
+        <seekvideo id="792951">some of them are wired a little bit differently.</seekvideo>
+        <seekvideo id="795248">They learn in a different way.</seekvideo>
+        <seekvideo id="797107">They absorb their surroundings in a different way,</seekvideo>
+        <seekvideo id="799441">and we need to be able to educate them</seekvideo>
+        <seekvideo id="801660">in a way that serves them best.</seekvideo>
+        <seekvideo id="804753">Beyond that, there are a lot of individuals</seekvideo>
+        <seekvideo id="806671">in this room who have great ideas</seekvideo>
+        <seekvideo id="808817">in terms of new technologies we can use,</seekvideo>
+        <seekvideo id="811361">everything from devices we can use to train the brain</seekvideo>
+        <seekvideo id="814480">to be able to make it more efficient</seekvideo>
+        <seekvideo id="816029">and to compensate for areas in which</seekvideo>
+        <seekvideo id="817702">it has a little bit of trouble,</seekvideo>
+        <seekvideo id="819296">to even things like Google Glass.</seekvideo>
+        <seekvideo id="821575">You could imagine, for instance, Gabriel,</seekvideo>
+        <seekvideo id="823359">with his social awkwardness,</seekvideo>
+        <seekvideo id="825180">might be able to wear Google Glass</seekvideo>
+        <seekvideo id="826638">with an earpiece in his ear,</seekvideo>
+        <seekvideo id="828169">and have a coach be able to help him,</seekvideo>
+        <seekvideo id="830096">be able to help think about conversations,</seekvideo>
+        <seekvideo id="832754">conversation-starters,</seekvideo>
+        <seekvideo id="834070">being able to even perhaps one day</seekvideo>
+        <seekvideo id="836181">invite a girl out on a date.</seekvideo>
+        <seekvideo id="838549">All of these new technologies</seekvideo>
+        <seekvideo id="840761">just offer tremendous opportunities</seekvideo>
+        <seekvideo id="842767">for us to be able to impact</seekvideo>
+        <seekvideo id="844672">the individuals with autism,</seekvideo>
+        <seekvideo id="847357">but yet we have a long way to go.</seekvideo>
+        <seekvideo id="849893">As much as we know,</seekvideo>
+        <seekvideo id="851203">there is so much more that we don't know,</seekvideo>
+        <seekvideo id="854160">and so I invite all of you</seekvideo>
+        <seekvideo id="856293">to be able to help us think about</seekvideo>
+        <seekvideo id="858535">how to do this better,</seekvideo>
+        <seekvideo id="859946">to use as a community our collective wisdom</seekvideo>
+        <seekvideo id="862825">to be able to make a difference,</seekvideo>
+        <seekvideo id="864631">and in particular,</seekvideo>
+        <seekvideo id="865888">for the individuals in families with autism,</seekvideo>
+        <seekvideo id="868592">I invite you to join the interactive autism network,</seekvideo>
+        <seekvideo id="871847">to be part of the solution to this,</seekvideo>
+        <seekvideo id="874041">because it's going to take really a lot of us</seekvideo>
+        <seekvideo id="876920">to think about what's important,</seekvideo>
+        <seekvideo id="879190">what's going to be a meaningful difference.</seekvideo>
+        <seekvideo id="881115">As we think about something</seekvideo>
+        <seekvideo id="882620">that's potentially a solution,</seekvideo>
+        <seekvideo id="884452">how well does it work?</seekvideo>
+        <seekvideo id="886111">Is it something that's really going to make a difference</seekvideo>
+        <seekvideo id="888059">in your lives, as an individual,</seekvideo>
+        <seekvideo id="890428">as a family with autism?</seekvideo>
+        <seekvideo id="892081">We're going to need individuals of all ages,</seekvideo>
+        <seekvideo id="894501">from the young to the old,</seekvideo>
+        <seekvideo id="896228">and with all different shapes and sizes</seekvideo>
+        <seekvideo id="898387">of the autism spectrum disorder</seekvideo>
+        <seekvideo id="900224">to make sure that we can have an impact.</seekvideo>
+        <seekvideo id="902400">So I invite all of you to join the mission</seekvideo>
+        <seekvideo id="904605">and to help to be able to make the lives</seekvideo>
+        <seekvideo id="907579">of individuals with autism</seekvideo>
+        <seekvideo id="909265">so much better and so much richer.</seekvideo>
+        <seekvideo id="911196">Thank you.</seekvideo>
+        <seekvideo id="913921">(Applause)</seekvideo>
+      </transcription>
+      <wordnum>2437</wordnum>
+      <charnum>13904</charnum>
+    </head>
+    <content>"Why?" "Why?" is a question that parents ask me all the time. "Why did my child develop autism?" As a pediatrician, as a geneticist, as a researcher, we try and address that question.
+  But autism is not a single condition. It's actually a spectrum of disorders, a spectrum that ranges, for instance, from Justin, a 13-year-old boy who's not verbal, who can't speak, who communicates by using an iPad to touch pictures to communicate his thoughts and his concerns, a little boy who, when he gets upset, will start rocking, and eventually, when he's disturbed enough, will bang his head to the point that he can actually cut it open and require stitches. That same diagnosis of autism, though, also applies to Gabriel, another 13-year-old boy who has quite a different set of challenges. He's actually quite remarkably gifted in mathematics. He can multiple three numbers by three numbers in his head with ease, yet when it comes to trying to have a conversation, he has great difficulty. He doesn't make eye contact. He has difficulty starting a conversation, feels awkward, and when he gets nervous, he actually shuts down. Yet both of these boys have the same diagnosis of autism spectrum disorder.
+  One of the things that concerns us is whether or not there really is an epidemic of autism. These days, one in 88 children will be diagnosed with autism, and the question is, why does this graph look this way? Has that number been increasing dramatically over time? Or is it because we have now started labeling individuals with autism, simply giving them a diagnosis when they were still present there before yet simply didn't have that label? And in fact, in the late 1980s, the early 1990s, legislation was passed that actually provided individuals with autism with resources, with access to educational materials that would help them. With that increased awareness, more parents, more pediatricians, more educators learned to recognize the features of autism. As a result of that, more individuals were diagnosed and got access to the resources they needed. In addition, we've changed our definition over time, so in fact we've widened the definition of autism, and that accounts for some of the increased prevalence that we see.
+  The next question everyone wonders is, what caused autism? And a common misconception is that vaccines cause autism. But let me be very clear: Vaccines do not cause autism. (Applause) In fact, the original research study that suggested that was the case was completely fraudulent. It was actually retracted from the journal Lancet, in which it was published, and that author, a physician, had his medical license taken away from him. (Applause) The Institute of Medicine, The Centers for Disease Control, have repeatedly investigated this and there is no credible evidence that vaccines cause autism. Furthermore, one of the ingredients in vaccines, something called thimerosal, was thought to be what the cause of autism was. That was actually removed from vaccines in the year 1992, and you can see that it really did not have an effect in what happened with the prevalence of autism. So again, there is no evidence that this is the answer. So the question remains, what does cause autism?
+  In fact, there's probably not one single answer. Just as autism is a spectrum, there's a spectrum of etiologies, a spectrum of causes. Based on epidemiological data, we know that one of the causes, or one of the associations, I should say, is advanced paternal age, that is, increasing age of the father at the time of conception. In addition, another vulnerable and critical period in terms of development is when the mother is pregnant. During that period, while the fetal brain is developing, we know that exposure to certain agents can actually increase the risk of autism. In particular, there's a medication, valproic acid, which mothers with epilepsy sometimes take, we know can increase that risk of autism. In addition, there can be some infectious agents that can also cause autism.
+  And one of the things I'm going to spend a lot of time focusing on are the genes that can cause autism. I'm focusing on this not because genes are the only cause of autism, but it's a cause of autism that we can readily define and be able to better understand the biology and understand better how the brain works so that we can come up with strategies to be able to intervene. One of the genetic factors that we don't understand, however, is the difference that we see in terms of males and females. Males are affected four to one compared to females with autism, and we really don't understand what that cause is.
+  One of the ways that we can understand that genetics is a factor is by looking at something called the concordance rate. In other words, if one sibling has autism, what's the probability that another sibling in that family will have autism? And we can look in particular at three types of siblings: identical twins, twins that actually share 100 percent of their genetic information and shared the same intrauterine environment, versus fraternal twins, twins that actually share 50 percent of their genetic information, versus regular siblings, brother-sister, sister-sister, also sharing 50 percent of their genetic information, yet not sharing the same intrauterine environment. And when you look at those concordance ratios, one of the striking things that you will see is that in identical twins, that concordance rate is 77 percent. Remarkably, though, it's not 100 percent. It is not that genes account for all of the risk for autism, but yet they account for a lot of that risk, because when you look at fraternal twins, that concordance rate is only 31 percent. On the other hand, there is a difference between those fraternal twins and the siblings, suggesting that there are common exposures for those fraternal twins that may not be shared as commonly with siblings alone.
+  So this provides some of the data that autism is genetic. Well, how genetic is it? When we compare it to other conditions that we're familiar with, things like cancer, heart disease, diabetes, in fact, genetics plays a much larger role in autism than it does in any of these other conditions. But with this, that doesn't tell us what the genes are. It doesn't even tell us in any one child, is it one gene or potentially a combination of genes? And so in fact, in some individuals with autism, it is genetic! That is, that it is one single, powerful, deterministic gene that causes the autism. However, in other individuals, it's genetic, that is, that it's actually a combination of genes in part with the developmental process that ultimately determines that risk for autism. We don't know in any one person, necessarily, which of those two answers it is until we start digging deeper.
+  So the question becomes, how can we start to identify what exactly those genes are. And let me pose something that might not be intuitive. In certain individuals, they can have autism for a reason that is genetic but yet not because of autism running in the family. And the reason is because in certain individuals, they can actually have genetic changes or mutations that are not passed down from the mother or from the father, but actually start brand new in them, mutations that are present in the egg or the sperm at the time of conception but have not been passed down generation through generation within the family. And we can actually use that strategy to now understand and to identify those genes causing autism in those individuals. So in fact, at the Simons Foundation, we took 2,600 individuals that had no family history of autism, and we took that child and their mother and father and used them to try and understand what were those genes causing autism in those cases? To do that, we actually had to comprehensively be able to look at all that genetic information and determine what those differences were between the mother, the father and the child. In doing so, I apologize, I'm going to use an outdated analogy of encyclopedias rather than Wikipedia, but I'm going to do so to try and help make the point that as we did this inventory, we needed to be able to look at massive amounts of information. Our genetic information is organized into a set of 46 volumes, and when we did that, we had to be able to account for each of those 46 volumes, because in some cases with autism, there's actually a single volume that's missing. We had to get more granular than that, though, and so we had to start opening those books, and in some cases, the genetic change was more subtle. It might have been a single paragraph that was missing, or yet, even more subtle than that, a single letter, one out of three billion letters that was changed, that was altered, yet had profound effects in terms of how the brain functions and affects behavior. In doing this within these families, we were able to account for approximately 25 percent of the individuals and determine that there was a single powerful genetic factor that caused autism within those families. On the other hand, there's 75 percent that we still haven't figured out.
+  As we did this, though, it was really quite humbling, because we realized that there was not simply one gene for autism. In fact, the current estimates are that there are 200 to 400 different genes that can cause autism. And that explains, in part, why we see such a broad spectrum in terms of its effects. Although there are that many genes, there is some method to the madness. It's not simply random 200, 400 different genes, but in fact they fit together. They fit together in a pathway. They fit together in a network that's starting to make sense now in terms of how the brain functions. We're starting to have a bottom-up approach where we're identifying those genes, those proteins, those molecules, understanding how they interact together to make that neuron work, understanding how those neurons interact together to make circuits work, and understand how those circuits work to now control behavior, and understand that both in individuals with autism as well as individuals who have normal cognition. But early diagnosis is a key for us. Being able to make that diagnosis of someone who's susceptible at a time in a window where we have the ability to transform, to be able to impact that growing, developing brain is critical. And so folks like Ami Klin have developed methods to be able to take infants, small babies, and be able to use biomarkers, in this case eye contact and eye tracking, to identify an infant at risk. This particular infant, you can see, making very good eye contact with this woman as she's singing "Itsy, Bitsy Spider," in fact is not going to develop autism. This baby we know is going to be in the clear. On the other hand, this other baby is going to go on to develop autism. In this particular child, you can see, it's not making good eye contact. Instead of the eyes focusing in and having that social connection, looking at the mouth, looking at the nose, looking off in another direction, but not again socially connecting, and being able to do this on a very large scale, screen infants, screen children for autism, through something very robust, very reliable, is going to be very helpful to us in terms of being able to intervene at an early stage when we can have the greatest impact.
+  How are we going to intervene? It's probably going to be a combination of factors. In part, in some individuals, we're going to try and use medications. And so in fact, identifying the genes for autism is important for us to identify drug targets, to identify things that we might be able to impact and can be certain that that's really what we need to do in autism. But that's not going to be the only answer. Beyond just drugs, we're going to use educational strategies. Individuals with autism, some of them are wired a little bit differently. They learn in a different way. They absorb their surroundings in a different way, and we need to be able to educate them in a way that serves them best. Beyond that, there are a lot of individuals in this room who have great ideas in terms of new technologies we can use, everything from devices we can use to train the brain to be able to make it more efficient and to compensate for areas in which it has a little bit of trouble, to even things like Google Glass. You could imagine, for instance, Gabriel, with his social awkwardness, might be able to wear Google Glass with an earpiece in his ear, and have a coach be able to help him, be able to help think about conversations, conversation-starters, being able to even perhaps one day invite a girl out on a date.
+  All of these new technologies just offer tremendous opportunities for us to be able to impact the individuals with autism, but yet we have a long way to go. As much as we know, there is so much more that we don't know, and so I invite all of you to be able to help us think about how to do this better, to use as a community our collective wisdom to be able to make a difference, and in particular, for the individuals in families with autism, I invite you to join the interactive autism network, to be part of the solution to this, because it's going to take really a lot of us to think about what's important, what's going to be a meaningful difference. As we think about something that's potentially a solution, how well does it work? Is it something that's really going to make a difference in your lives, as an individual, as a family with autism? We're going to need individuals of all ages, from the young to the old, and with all different shapes and sizes of the autism spectrum disorder to make sure that we can have an impact. So I invite all of you to join the mission and to help to be able to make the lives of individuals with autism so much better and so much richer. Thank you. (Applause)</content>
+  </file>
+</xml>

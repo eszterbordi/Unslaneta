@@ -1,9 +1,15 @@
 #!/usr/bin/python3
 
+from sys import argv, exit
+from os import pathsep
+
 from xml.dom import minidom
 from nltk.translate import AlignedSent, IBMModel2, IBMModel1, phrase_based
+import dill as persist
 
 def build_dict_from_xml(doc):
+    
+    print("--- Processing data from xml")
     talks = {}
 
     for talk in doc.getElementsByTagName("head"):
@@ -22,6 +28,8 @@ def build_dict_from_xml(doc):
 
 
 def get_aligned_sentences():
+    
+    print("--- Aligning sentences")
     doc_en = minidom.parse("./corpora/ted_en-20160408.xml")
     talks_en = build_dict_from_xml(doc_en)
 
@@ -41,6 +49,8 @@ def get_aligned_sentences():
     return sentence_pairs
 
 def build_ibm2_model(sentence_pairs):
+    
+    print("--- Building IBM2 Model")
     bitext = []
 
     for (sent_en, sent_hu) in sentence_pairs:
@@ -49,7 +59,7 @@ def build_ibm2_model(sentence_pairs):
 
 def build_phrases(sentence_pairs, bitext):
 
-    print("Building phrases")
+    print("--- Building phrases")
     phrases = []
     exc = 0
     for s, b in zip(sentence_pairs, bitext):
@@ -60,14 +70,35 @@ def build_phrases(sentence_pairs, bitext):
             exc += 1
             # print(e)
 
-    print("Nr exceptions: ", exc)
+    print("Number of exceptions: ", exc)
 
     return phrases
 
+def persist_model(model_filename, ibm2):
+    
+    print("--- Started the trained model dump")
+    with open(model_filename, 'wb') as fout:
+        persist.dump(ibm2, fout)
+
+def load_model(model_filename):
+    
+    print("--- Started the trained model load")
+    with open(model_filename, 'rb') as fin:
+        ibm = persist.load(fin)
+    return ibm
+    
 def main():
-    print("start")
+    
+    if len(argv) != 2:
+        print("Usage: " + argv[0].parse(pathsep)[-1] + " <persistedmodel_file>")
+        exit(1)
+    model_filename = argv[1]
+    print("--- Start\nPersisted model file path: " + model_filename)
+        
     sentence_pairs = get_aligned_sentences()
+    print("--- Started training")
     ibm2, bitext = build_ibm2_model(sentence_pairs)
+        
     phrases = build_phrases(sentence_pairs, bitext)
 
     print(round(ibm2.translation_table['könyv']['book'], 3))

@@ -228,3 +228,4 @@ local.properties
 .recommenders/
 
 nltk-project/unslaneta/__pycache__/
+nltk-project/unslaneta/output.dat
