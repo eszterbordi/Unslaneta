@@ -226,3 +226,5 @@ local.properties
 
 # Code Recommenders
 .recommenders/
+
+nltk-project/unslaneta/__pycache__/
