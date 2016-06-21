@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 from xml.dom import minidom
-from nltk.translate import AlignedSent, IBMModel2
+from nltk.translate import AlignedSent, IBMModel2, IBMModel1, phrase_based
 
 def build_dict_from_xml(doc):
     talks = {}
@@ -45,14 +45,32 @@ def build_ibm2_model(sentence_pairs):
 
     for (sent_en, sent_hu) in sentence_pairs:
         bitext.append(AlignedSent(sent_en.split(" "), sent_hu.split(" ")))
+    return IBMModel2(bitext, 5), bitext
 
-    return IBMModel2(bitext, 5)
+def build_phrases(sentence_pairs, bitext):
+
+    print("Building phrases")
+    phrases = []
+    exc = 0
+    for s, b in zip(sentence_pairs, bitext):
+        try:
+            phrase = phrase_based.phrase_extraction(s[0], s[1], b.alignment)
+            phrases.append(phrase)
+        except Exception as e:
+            exc += 1
+            # print(e)
+
+    print("Nr exceptions: ", exc)
+
+    return phrases
 
 def main():
+    print("start")
     sentence_pairs = get_aligned_sentences()
-    for sentence_pair in sentence_pairs:
-        print(str(sentence_pair) + "\n")
-    #ibm2 = build_ibm2_model(sentence_pairs)
+    ibm2, bitext = build_ibm2_model(sentence_pairs)
+    phrases = build_phrases(sentence_pairs, bitext)
+
+    print(round(ibm2.translation_table['könyv']['book'], 3))
 
 if __name__ == '__main__':
     main()
