@@ -4,11 +4,12 @@ from sys import argv, exit
 from os import pathsep
 
 from xml.dom import minidom
-from nltk.translate import AlignedSent, IBMModel2, IBMModel1, phrase_based, PhraseTable, StackDecoder
+from nltk.translate import AlignedSent, Alignment, IBMModel2, IBMModel1, phrase_based, PhraseTable, StackDecoder
 from collections import defaultdict
 
 import math
 import dill as persist
+import re
 
 
 def build_dict_from_xml(doc):
@@ -34,10 +35,10 @@ def build_dict_from_xml(doc):
 def get_aligned_sentences():
 
     print("--- Aligning sentences")
-    doc_en = minidom.parse("./corpora/ted_en-20160408.xml")
+    doc_en = minidom.parse("./corpora/ted_en-small.xml")
     talks_en = build_dict_from_xml(doc_en)
 
-    doc_hu = minidom.parse("./corpora/ted_hu-20160408.xml")
+    doc_hu = minidom.parse("./corpora/ted_hu-small.xml")
     talks_hu = build_dict_from_xml(doc_hu)
 
     sentence_pairs = []
@@ -66,19 +67,29 @@ def build_ibm2_model(sentence_pairs):
 
     return IBMModel2(bitext, 5), bitext
 
-def build_phrases(sentence_pairs, bitext):
+def remove_Nones(bitext):
+    
+    bitext_new = []
+    regex = re.compile(r"\([0-9]+, None\), ", re.IGNORECASE)
+    for b in bitext:
+        alignment_str = re.sub(regex, "", b.alignment.__repr__()).replace("Alignment", "").replace("), ", "#").replace(", ", "-").replace("#(", " ").replace("[", "").replace("]", "").replace("(", "").replace(")", "")
+        bitext_new.append(AlignedSent(b.words, b.mots, Alignment.fromstring(alignment_str)))
+    return bitext_new
+
+def build_phrases(bitext):
 
     print("--- Building phrases")
     phrases = []
-    exc = 0
-    for s, b in zip(sentence_pairs, bitext):
-        try:
-            phrase = phrase_based.phrase_extraction(s[0], s[1], b.alignment)
-            phrases.append(phrase)
-        except Exception as e:
-            exc += 1
-
-    print("Number of exceptions: ", exc)
+    
+    for b in bitext:
+        bitext_words = ' '.join(word for word in b.words)
+        bitext_mots = ' '.join(mot for mot in b.mots)
+        print(bitext_words)
+        print(bitext_mots)
+        print(b.alignment.__repr__())
+        
+        phrase = phrase_based.phrase_extraction(bitext_words, bitext_mots, b.alignment)
+        phrases.append(phrase)
 
     return phrases
 
@@ -132,13 +143,15 @@ def main():
     sentence_pairs = get_aligned_sentences()
     print("--- Started training")
     ibm2, bitext = build_ibm2_model(sentence_pairs)
+    bitext = remove_Nones(bitext)
 
     #ibm2 = load_model('./models/ibm2.p')
+    #bitext = load_model('./models/bitext.p')
 
-    #persist_model('./models/ibm2.p', ibm2)
-    #persist_model('./models/bitext.p', bitext)
+    persist_model('./models/ibm2.p', ibm2)
+    persist_model('./models/bitext.p', bitext)
 
-    phrases = build_phrases(sentence_pairs, bitext)
+    phrases = build_phrases(bitext)
     phrase_table = build_phrase_table(phrases)
 
     language_prob = defaultdict(lambda: 0.0)
