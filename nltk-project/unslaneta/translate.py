@@ -83,7 +83,7 @@ def remove_nones(bitext):
         alignment_str = re.sub(regex3, "", alignment_str)
         alignment_str = re.sub(regex4, "", alignment_str)
 
-        alignment_str = alignment_str.replace("Alignment", "").replace("), ", "#").replace(", ", "-").replace("#(", " ").replace("[", "").replace("]", "").replace("(", "").replace(")", "")
+        alignment_str = alignment_str.replace("Alignment", "").replace("), ", "#").replace(", ", "-").replace("#(", " ").replace("[", "").replace("]", "").replace("(", "").replace(")", "").replace("#", "")
         bitext_new.append(AlignedSent(b.words, b.mots, Alignment.fromstring(alignment_str)))
     return bitext_new
 
