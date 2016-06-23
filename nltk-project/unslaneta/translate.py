@@ -102,7 +102,7 @@ def build_phrases(bitext):
     for b in bitext:
         bitext_words = ' '.join(word for word in b.words if word != '')
         bitext_mots = ' '.join(mot for mot in b.mots if mot != '')
-        phrase = phrase_based.phrase_extraction(bitext_words, bitext_mots, b.alignment)
+        phrase = phrase_based.phrase_extraction(bitext_words, bitext_mots, b.alignment, 2)
         phrases.append(phrase)
 
     return phrases
@@ -147,13 +147,13 @@ def build_phrase_table(phrases):
 
 def persist_model(model_filename, model):
 
-    print("--- Started the trained model dump")
+    print("--- Started the trained model dump:", model_filename)
     with open(model_filename, 'wb') as fout:
         persist.dump(model, fout)
 
 def load_model(model_filename):
 
-    print("--- Started the trained model load")
+    print("--- Started the trained model load:", model_filename)
     with open(model_filename, 'rb') as fin:
         model = persist.load(fin)
     return model
@@ -209,47 +209,36 @@ def build_language_model(bitext, phrases):
     return language_model
 
 def main():
-
-    #if len(argv) != 2:
-    #    print("Usage: " + argv[0].parse(pathsep)[-1] + " <persistedmodel_file>")
-    #    exit(1)
-    #model_filename = argv[1]
-    #print("--- Start\nPersisted model file path: " + model_filename)
-
-    #sentence_pairs = get_aligned_sentences()
-    #ibm2, bitext = build_ibm2_model(sentence_pairs)
-    #print("--- Started training")
-    #bitext = remove_nones(bitext)
-
     #ibm2 = load_model('./models/ibm2.p')
-    bitext = load_model('./models/bitext.p')
-    phrases = load_model('./models/phrases.p')
-    phrase_table = load_model('./models/phrase_table.p')
+    #bitext = load_model('./models/bitext.p')
+    #phrases = load_model('./models/phrases.p')
+    #phrase_table = load_model('./models/phrase_table.p')
+    #language_model = load_model('./models/language_model.p')
 
-    #persist_model('./models/ibm2.p', ibm2)
-    #persist_model('./models/bitext.p', bitext)
+    sentence_pairs = get_aligned_sentences()
+    ibm2, bitext = build_ibm2_model(sentence_pairs)
+    print("--- Started training")
+    bitext = remove_nones(bitext)
 
-    #phrases = build_phrases(bitext)
-    #persist_model('./models/phrases.p', phrases)
+    persist_model('./models/ibm2.p', ibm2)
+    persist_model('./models/bitext.p', bitext)
 
-    # phrase_table = build_phrase_table(phrases)
-    # persist_model('./models/phrase_table.p', phrase_table)
+    phrases = build_phrases(bitext)
+    persist_model('./models/phrases.p', phrases)
+
+    phrase_table = build_phrase_table(phrases)
+    persist_model('./models/phrase_table.p', phrase_table)
 
     print("--- Started creating language model")
 
     language_model = build_language_model(bitext, phrases)
     persist_model('./models/language_model.p', language_model)
 
-    #language_model = build_language_model(bitext, phrases)
-    #persist_model('./models/language_model.p', language_model)
-
     print("--- Started building decoder")
     stack_decoder = StackDecoder(phrase_table, language_model)
     persist_model('./models/decoder.p', stack_decoder)
 
     print("--- Ready")
-
-    print(stack_decoder.translate(['I', 'am', 'going', 'to', 'school']))
 
 if __name__ == '__main__':
     main()
