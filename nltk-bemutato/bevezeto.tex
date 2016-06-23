@@ -37,10 +37,30 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{IBM modell}
+\begin{frame}{IBM1 modell}
+	\begin{itemize}
+		\item \textbf{Kérdés}: Hogyan modellezük a $P(f|e)$ valószínűséget?
+			\begin{equation*}
+			\begin{split}
+			f = f_1f_2...f_m\\
+			e = e_1e_2...e_l
+			\end{split}
+			\end{equation*}
+		\item m-et rögzítve kapjuk: $p(f_1f_2...f_m|e_1e_2...e_l, m)$
+		\item Hozzávesszük még a célmondat szavainak lehetséges elrendezéseit:
+		$p(f_1f_2...f_m, a_1...a_m|e_1e_2...e_l, m)$
+		\item \textbf{Példa:}\\
+				f = Le programme a ete mis en application\\
+				e = And the programme has been implemented \\
+				a = 0-1 1-2 2-3 3-4 4-5 5-5 5-5
+	\end{itemize}
 
 \end{frame}
 
-\begin{frame}{StackDecoder}
-
+\begin{frame}{IBM2 modell}
+	\begin{figure}[t]
+	  	\includegraphics[width=1\linewidth]{images/ibm2}
+	  	\caption{IBM2 modell\footnotemark}
+	  \end{figure}
+\footnotetext{\href{https://en.wikipedia.org/wiki/IBM_alignment_models}{Forrás IBM2 modell}}
 \end{frame}
