@@ -10,11 +10,11 @@
 % modify this file as you see fit and even to delete this copyright
 % notice. 
 
+
 \documentclass{beamer}
 
 \usepackage{docmute}
 \usepackage{pgfgantt}
-
 \usepackage[utf8]{inputenc}
 \usepackage[hungarian]{babel}
 \usepackage{amsmath}
@@ -66,8 +66,11 @@
 
 % Let's get started
 \begin{document}
+
+
 \input{cimoldal}
 \input{tartalom}
+
 
 % Sections are stored in separate .tex files
 
@@ -77,14 +80,12 @@
 \section[Megvalósítás]{Mit használtunk fel?}
 \input{megvalositas}
 
-\tableofcontents
-
 
 
 % All of the following is optional and typically not needed. 
 \appendix
-\section<presentation>*{\appendixname}
-\subsection<presentation>*{Irodalomjegyzék}
+
+\section<presentation>*{Irodalomjegyzék}
 
 
 \begin{frame}[allowframebreaks]
@@ -92,6 +93,7 @@
         \bibliographystyle{amsalpha}
         \bibliography{referencia}
 \end{frame}
+
 
 \end{document}
 
