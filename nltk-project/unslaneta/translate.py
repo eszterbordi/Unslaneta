@@ -55,13 +55,14 @@ def get_aligned_sentences():
                 sentences_hu = talks_hu[talkid]
                 if sent_id in sentences_hu:
                     sent_hu = sentences_hu[sent_id]
-                    sent_hu = sent_hu.translate(str.maketrans("","", string.punctuation)).lstrip().rstrip()
+                    sent_hu = sent_hu.translate(str.maketrans("","", string.punctuation))
                     sent_hu = re.sub(regex1, "", sent_hu)
-                    sent_hu = re.sub(regex2, " ", sent_hu)
-                    sent_en = sent_en.translate(str.maketrans("","", string.punctuation)).lstrip().rstrip()
+                    sent_hu = re.sub(regex2, " ", sent_hu).lstrip().rstrip()
+                    sent_en = sent_en.translate(str.maketrans("","", string.punctuation))
                     sent_en = re.sub(regex1, "", sent_en)
-                    sent_en = re.sub(regex2, " ", sent_en)
-                    sentence_pairs.append((sent_en, sent_hu))
+                    sent_en = re.sub(regex2, " ", sent_en).lstrip().rstrip()
+                    if sent_en and sent_hu:
+                        sentence_pairs.append((sent_en, sent_hu))
 
     return sentence_pairs
 
@@ -101,14 +102,7 @@ def build_phrases(bitext):
     for b in bitext:
         bitext_words = ' '.join(word for word in b.words if word != '')
         bitext_mots = ' '.join(mot for mot in b.mots if mot != '')
-        print(b.words)
-        print(b.mots)
-        print(bitext_words)
-        print(bitext_mots)
-        print(b.alignment)
-
         phrase = phrase_based.phrase_extraction(bitext_words, bitext_mots, b.alignment, 2)
-        print(phrase)
         phrases.append(phrase)
 
     return phrases
