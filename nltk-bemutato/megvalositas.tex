@@ -48,12 +48,13 @@
 \begin{frame}{IBM2 model, bitext}
 	IBM2:
 	\begin{itemize}
-		\item model felépítése a sentence paire-ekből
-		\item bitext felépítése -- AlignedSent-ekből álló lista -- (words, mots, alignment)
+		\item modell felépítése a sentence paire-ekből
+		\item szó aligne felépítése
 	\end{itemize}
 	
 	Bitext:
 	\begin{itemize}
+		\item bitext felépítése -- AlignedSent-ekből álló lista -- (words, mots, alignment)
 		\item None-ok eltávolítása
 	\end{itemize}
 \end{frame}
@@ -63,7 +64,7 @@
 	\begin{itemize}
 		\item phrasek létrehozása a korpuszban található mondat párokból és ezek alignmentjéből
 		\item kellenek a PhraseTable létrehozásához valamint a language model felépítéséhez
-		\item ((0, 2), (0, 4), 'michael assumes', 'michael geht davon aus')	
+		\item pl: ((0, 2), (0, 4), 'michael assumes', 'michael geht davon aus')	
 	\end{itemize}
 	
 	PhraseTable:
@@ -76,7 +77,7 @@
 
 \begin{frame}{Language model}
 	\begin{itemize}
-		\item a fordított mondat folytonosságát biztosítja
+		\item a célnyelv folytonosságát biztosítja: a szavak megfelelő sorrendjét valamint a pontos jelentésének kiválasztását
 		\item valószínűséget rendel a célnyelvbeli phrasekhez
 		\item a valószínűségeket bi-grammok és a chain modell segítségével számolja
 	\end{itemize}
