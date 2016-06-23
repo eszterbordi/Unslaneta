@@ -49,20 +49,20 @@ def get_aligned_sentences():
     regex1 = re.compile(r"—")
     regex2 = re.compile(r" +")
 
-    for talkid, sentences in talks_en.items():
-        for sent_id, sent_en in sentences.items():
-            if talkid in talks_hu:
-                sentences_hu = talks_hu[talkid]
-                if sent_id in sentences_hu:
-                    sent_hu = sentences_hu[sent_id]
-                    sent_hu = sent_hu.translate(str.maketrans("","", string.punctuation))
-                    sent_hu = re.sub(regex1, "", sent_hu)
-                    sent_hu = re.sub(regex2, " ", sent_hu).lstrip().rstrip()
+    for talkid, sentences in talks_hu.items():
+        for sent_id, sent_hu in sentences.items():
+            if talkid in talks_en:
+                sentences_en = talks_en[talkid]
+                if sent_id in sentences_en:
+                    sent_en = sentences_en[sent_id]
                     sent_en = sent_en.translate(str.maketrans("","", string.punctuation))
                     sent_en = re.sub(regex1, "", sent_en)
                     sent_en = re.sub(regex2, " ", sent_en).lstrip().rstrip()
-                    if sent_en and sent_hu:
-                        sentence_pairs.append((sent_en, sent_hu))
+                    sent_hu = sent_hu.translate(str.maketrans("","", string.punctuation))
+                    sent_hu = re.sub(regex1, "", sent_hu)
+                    sent_hu = re.sub(regex2, " ", sent_hu).lstrip().rstrip()
+                    if sent_hu and sent_en:
+                        sentence_pairs.append((sent_hu, sent_en))
 
     return sentence_pairs
 
@@ -71,8 +71,8 @@ def build_ibm2_model(sentence_pairs):
     print("--- Building IBM2 Model")
     bitext = []
 
-    for (sent_en, sent_hu) in sentence_pairs:
-        bitext.append(AlignedSent(sent_en.split(" "), sent_hu.split(" ")))
+    for (sent_hu, sent_en) in sentence_pairs:
+        bitext.append(AlignedSent(sent_hu.split(" "), sent_en.split(" ")))
 
     return IBMModel2(bitext, 5), bitext
 
