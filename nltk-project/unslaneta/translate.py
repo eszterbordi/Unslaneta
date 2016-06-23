@@ -46,8 +46,8 @@ def get_aligned_sentences():
 
     sentence_pairs = []
 
-    regex1 = re.compile(r" +")
-    regex2 = re.compile(r"—")
+    regex1 = re.compile(r"—")
+    regex2 = re.compile(r" +")
 
     for talkid, sentences in talks_en.items():
         for sent_id, sent_en in sentences.items():
@@ -56,11 +56,11 @@ def get_aligned_sentences():
                 if sent_id in sentences_hu:
                     sent_hu = sentences_hu[sent_id]
                     sent_hu = sent_hu.translate(str.maketrans("","", string.punctuation)).lstrip().rstrip()
-                    sent_hu = re.sub(regex1, " ", sent_hu)
-                    sent_hu = re.sub(regex2, "", sent_hu)
+                    sent_hu = re.sub(regex1, "", sent_hu)
+                    sent_hu = re.sub(regex2, " ", sent_hu)
                     sent_en = sent_en.translate(str.maketrans("","", string.punctuation)).lstrip().rstrip()
-                    sent_en = re.sub(regex1, " ", sent_en)
-                    sent_en = re.sub(regex2, "", sent_en)
+                    sent_en = re.sub(regex1, "", sent_en)
+                    sent_en = re.sub(regex2, " ", sent_en)
                     sentence_pairs.append((sent_en, sent_hu))
 
     return sentence_pairs
@@ -99,8 +99,8 @@ def build_phrases(bitext):
     phrases = []
 
     for b in bitext:
-        bitext_words = ' '.join(word for word in b.words)
-        bitext_mots = ' '.join(mot for mot in b.mots)
+        bitext_words = ' '.join(word for word in b.words if word != '')
+        bitext_mots = ' '.join(mot for mot in b.mots if mot != '')
         print(b.words)
         print(b.mots)
         print(bitext_words)
