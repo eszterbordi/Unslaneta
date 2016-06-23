@@ -159,23 +159,24 @@ def load_model(model_filename):
     return model
 
 def build_language_model(bitext, phrases):
+    print("--- Building language model")
 
     word_count = {}
     biword_count = {}
     nr_words = 0
 
     for b in bitext:
-        phrase_size = len(b.words)
+        phrase_size = len(b.mpds)
         nr_words += phrase_size
         for i in range(0, phrase_size):
-            word = b.words[i].lower()
+            word = b.mops[i].lower()
             if word in word_count:
                 word_count[word] += 1
             else:
                 word_count[word] = 1
 
             if i > 0:
-                biword = b.words[i].lower() + ' ' + word
+                biword = b.mops[i-1].lower() + ' ' + word
                 if biword in biword_count:
                     biword_count[biword] += 1
                 else:
@@ -221,11 +222,9 @@ def main():
     #bitext = remove_nones(bitext)
 
     #ibm2 = load_model('./models/ibm2.p')
-    #bitext = load_model('./models/bitext.p')
-    #phrases = load_model('./models/phrases.p')
-    #phrase_table = load_model('./models/phrase_table.p')
-    #language_model = load_model('./models/language_model.p')
-    stack_decoder = load_model('./models/decoder.p')
+    bitext = load_model('./models/bitext.p')
+    phrases = load_model('./models/phrases.p')
+    phrase_table = load_model('./models/phrase_table.p')
 
     #persist_model('./models/ibm2.p', ibm2)
     #persist_model('./models/bitext.p', bitext)
@@ -233,17 +232,20 @@ def main():
     #phrases = build_phrases(bitext)
     #persist_model('./models/phrases.p', phrases)
 
-    #phrase_table = build_phrase_table(phrases)
-    #persist_model('./models/phrase_table.p', phrase_table)
+    # phrase_table = build_phrase_table(phrases)
+    # persist_model('./models/phrase_table.p', phrase_table)
 
-    #print("--- Started creating language model")
+    print("--- Started creating language model")
+
+    language_model = build_language_model(bitext, phrases)
+    persist_model('./models/language_model.p', language_model)
 
     #language_model = build_language_model(bitext, phrases)
     #persist_model('./models/language_model.p', language_model)
 
-    #print("--- Started building decoder")
-    #stack_decoder = StackDecoder(phrase_table, language_model)
-    #persist_model('./models/decoder.p', stack_decoder)
+    print("--- Started building decoder")
+    stack_decoder = StackDecoder(phrase_table, language_model)
+    persist_model('./models/decoder.p', stack_decoder)
 
     print("--- Ready")
 
