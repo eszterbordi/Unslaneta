@@ -18,7 +18,7 @@ def main():
     while True:
         sent = input("> ")
         sent_list = sent.split(' ')
-        print("> Translation:", stack_decoder.translate(sent_list))
+        print("> Translation:", " ".join(stack_decoder.translate(sent_list)))
 
 if __name__ == '__main__':
     main()
