@@ -148,6 +148,55 @@ def load_model(model_filename):
         model = persist.load(fin)
     return model
 
+def build_language_model(bitext, phrases):
+    
+    word_count = {}
+    biword_count = {}
+    nr_words = 0
+
+    for b in bitext:
+        phrase_size = len(b.words)
+        nr_words += phrase_size
+        for i in range(0, phrase_size):
+            word = b.words[i].lower()
+            if word in word_count:
+                word_count[word] += 1
+            else:
+                word_count[word] = 1
+
+            if i > 0:
+                biword = b.words[i].lower() + ' ' + word
+                if biword in biword_count:
+                    biword_count[biword] += 1
+                else:
+                    biword_count[biword] = 1
+
+    language_prob = defaultdict(lambda: -999.0)
+    
+    for phrase_set in phrases:
+        for (src_pos, target_pos, src_phrase, target_phrase) in phrase_set:
+            phrase = target_phrase.split(' ')
+            nr_exceptions = 0
+            try:
+                w = phrase[0].lower()
+                if not w in word_count:
+                    raise Exception("Bad word")
+                prob = word_count[phrase[0].lower()] / nr_words
+
+                for i in range(1,len(phrase)):
+                    w1 = phrase[i-1].lower()
+                    w2 = phrase[i].lower()
+                    ww = w1+ ' ' + w2
+                    if (ww not in biword_count) or (w1 not in word_count):
+                        raise Exception("Bad word")
+                    prob *= biword_count[ww] / word_count[w1]
+                language_prob[tuple(phrase)] = math.log(prob)
+            except:
+                nr_exceptions += 1
+
+    language_model = type('',(object,),{'probability_change': lambda self, context, phrase: language_prob[phrase], 'probability': lambda self, phrase: language_prob[phrase]})()
+    return language_model
+
 def main():
 
     #if len(argv) != 2:
@@ -174,8 +223,8 @@ def main():
     persist_model('./models/phrase_table.p', phrases)
 
     print("--- Started creating language model")
-    language_prob = defaultdict(lambda: 0.0)
-    language_model = type('',(object,),{'probability_change': lambda self, context, phrase: language_prob[phrase], 'probability': lambda self, phrase: language_prob[phrase]})()
+    
+    language_model = build_language_model(bitext, phrases)
 
     print("--- Started building decoder")
     stack_decoder = StackDecoder(phrase_table, language_model)
