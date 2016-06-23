@@ -102,7 +102,7 @@ def build_phrases(bitext):
     for b in bitext:
         bitext_words = ' '.join(word for word in b.words if word != '')
         bitext_mots = ' '.join(mot for mot in b.mots if mot != '')
-        phrase = phrase_based.phrase_extraction(bitext_words, bitext_mots, b.alignment, 2)
+        phrase = phrase_based.phrase_extraction(bitext_words, bitext_mots, b.alignment)
         phrases.append(phrase)
 
     return phrases
@@ -220,9 +220,12 @@ def main():
     #print("--- Started training")
     #bitext = remove_nones(bitext)
 
-    ibm2 = load_model('./models/ibm2.p')
-    bitext = load_model('./models/bitext.p')
-    phrases = load_model('./models/phrases.p')
+    #ibm2 = load_model('./models/ibm2.p')
+    #bitext = load_model('./models/bitext.p')
+    #phrases = load_model('./models/phrases.p')
+    #phrase_table = load_model('./models/phrase_table.p')
+    #language_model = load_model('./models/language_model.p')
+    stack_decoder = load_model('./models/decoder.p')
 
     #persist_model('./models/ibm2.p', ibm2)
     #persist_model('./models/bitext.p', bitext)
@@ -230,21 +233,21 @@ def main():
     #phrases = build_phrases(bitext)
     #persist_model('./models/phrases.p', phrases)
 
-    phrase_table = build_phrase_table(phrases)
-    persist_model('./models/phrase_table.p', phrase_table)
+    #phrase_table = build_phrase_table(phrases)
+    #persist_model('./models/phrase_table.p', phrase_table)
 
-    print("--- Started creating language model")
+    #print("--- Started creating language model")
 
-    language_model = build_language_model(bitext, phrases)
-    persist_model('./models/language_model.p', language_model)
+    #language_model = build_language_model(bitext, phrases)
+    #persist_model('./models/language_model.p', language_model)
 
-    print("--- Started building decoder")
-    stack_decoder = StackDecoder(phrase_table, language_model)
-    persist_model('./models/decoder.p', decoder)
+    #print("--- Started building decoder")
+    #stack_decoder = StackDecoder(phrase_table, language_model)
+    #persist_model('./models/decoder.p', stack_decoder)
 
     print("--- Ready")
 
-    stack_decoder.translate(['I', 'am', 'going', 'to', 'school'])
+    print(stack_decoder.translate(['I', 'am', 'going', 'to', 'school']))
 
 if __name__ == '__main__':
     main()
