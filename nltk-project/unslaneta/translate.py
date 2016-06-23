@@ -113,6 +113,8 @@ def build_phrase_table(phrases):
     phrase_counts = {}
     phrase_translation_counts = {}
 
+    print("--- Collecting counts")
+
     for phrase_set in phrases:
         for (src_pos, target_pos, src_phrase, target_phrase) in phrase_set:
             if src_phrase in phrase_counts:
@@ -126,12 +128,20 @@ def build_phrase_table(phrases):
                 phrase_translation_counts[src_phrase] = {}
                 phrase_translation_counts[src_phrase][target_phrase] = 1
 
+    print("--- Populating phrase table")
+
     phrase_table = PhraseTable()
 
+    total_phrase_count = len(phrases)
+    i = 0
+
     for phrase_set in phrases:
+        if (i % 10000 == 0):
+            print("--- --- Processing phrase set", i, "out of", total_phrase_count)
         for (src_pos, target_pos, src_phrase, target_phrase) in phrase_set:
             probability = phrase_translation_counts[src_phrase][target_phrase] / phrase_counts[src_phrase]
             phrase_table.add(tuple(src_phrase.split(' ')), tuple(target_phrase.split(' ')), math.log(probability))
+        i += 1
 
     return phrase_table
 
@@ -149,7 +159,7 @@ def load_model(model_filename):
     return model
 
 def build_language_model(bitext, phrases):
-    
+
     word_count = {}
     biword_count = {}
     nr_words = 0
@@ -172,7 +182,7 @@ def build_language_model(bitext, phrases):
                     biword_count[biword] = 1
 
     language_prob = defaultdict(lambda: -999.0)
-    
+
     for phrase_set in phrases:
         for (src_pos, target_pos, src_phrase, target_phrase) in phrase_set:
             phrase = target_phrase.split(' ')
@@ -205,29 +215,32 @@ def main():
     #model_filename = argv[1]
     #print("--- Start\nPersisted model file path: " + model_filename)
 
-    sentence_pairs = get_aligned_sentences()
-    ibm2, bitext = build_ibm2_model(sentence_pairs)
-    print("--- Started training")
-    bitext = remove_nones(bitext)
+    #sentence_pairs = get_aligned_sentences()
+    #ibm2, bitext = build_ibm2_model(sentence_pairs)
+    #print("--- Started training")
+    #bitext = remove_nones(bitext)
 
-    #ibm2 = load_model('./models/ibm2.p')
-    #bitext = load_model('./models/bitext.p')
+    ibm2 = load_model('./models/ibm2.p')
+    bitext = load_model('./models/bitext.p')
+    phrases = load_model('./models/phrases.p')
 
-    persist_model('./models/ibm2.p', ibm2)
-    persist_model('./models/bitext.p', bitext)
+    #persist_model('./models/ibm2.p', ibm2)
+    #persist_model('./models/bitext.p', bitext)
 
-    phrases = build_phrases(bitext)
-    persist_model('./models/phrases.p', phrases)
+    #phrases = build_phrases(bitext)
+    #persist_model('./models/phrases.p', phrases)
 
     phrase_table = build_phrase_table(phrases)
-    persist_model('./models/phrase_table.p', phrases)
+    persist_model('./models/phrase_table.p', phrase_table)
 
     print("--- Started creating language model")
-    
+
     language_model = build_language_model(bitext, phrases)
+    persist_model('./models/language_model.p', language_model)
 
     print("--- Started building decoder")
     stack_decoder = StackDecoder(phrase_table, language_model)
+    persist_model('./models/decoder.p', decoder)
 
     print("--- Ready")
 
