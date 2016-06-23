@@ -7,6 +7,7 @@ from xml.dom import minidom
 from nltk.translate import AlignedSent, Alignment, IBMModel2, IBMModel1, phrase_based, PhraseTable, StackDecoder
 from collections import defaultdict
 
+import string
 import math
 import dill as persist
 import re
@@ -51,10 +52,8 @@ def get_aligned_sentences():
                 sentences_hu = talks_hu[talkid]
                 if sent_id in sentences_hu:
                     sent_hu = sentences_hu[sent_id]
-                    sent_hu = sent_hu.replace(', ', ' , ')
-                    sent_hu = sent_hu.replace('.', '')
-                    sent_en = sent_en.replace(', ', ' , ')
-                    sent_en = sent_en.replace('.', '')
+                    sent_hu = sent_hu.translate(str.maketrans("","", string.punctuation)).lstrip().rstrip()
+                    sent_en = sent_en.translate(str.maketrans("","", string.punctuation)).lstrip().rstrip()
                     sentence_pairs.append((sent_en, sent_hu))
 
     return sentence_pairs
@@ -97,14 +96,17 @@ def build_phrases(bitext):
         bitext_mots = ' '.join(mot for mot in b.mots)
         #print(bitext_words)
         #print(bitext_mots)
-        #print(b.alignment.__repr__())
+        #print(b.alignment)
 
-        phrase = phrase_based.phrase_extraction(bitext_words, bitext_mots, b.alignment)
+        phrase = phrase_based.phrase_extraction(bitext_words, bitext_mots, b.alignment, 2)
+        #print(phrase)
         phrases.append(phrase)
 
     return phrases
 
 def build_phrase_table(phrases):
+    print("--- Building phrase table")
+
     phrase_counts = {}
     phrase_translation_counts = {}
 
@@ -151,24 +153,31 @@ def main():
     #model_filename = argv[1]
     #print("--- Start\nPersisted model file path: " + model_filename)
 
-    sentence_pairs = get_aligned_sentences()
-    print("--- Started training")
-    ibm2, bitext = build_ibm2_model(sentence_pairs)
-    bitext = remove_nones(bitext)
+    #sentence_pairs = get_aligned_sentences()
+    #ibm2, bitext = build_ibm2_model(sentence_pairs)
+    #print("--- Started training")
+    #bitext = remove_nones(bitext)
 
-    #ibm2 = load_model('./models/ibm2.p')
-    #bitext = load_model('./models/bitext.p')
+    ibm2 = load_model('./models/ibm2.p')
+    bitext = load_model('./models/bitext.p')
 
-    persist_model('./models/ibm2.p', ibm2)
-    persist_model('./models/bitext.p', bitext)
+    #persist_model('./models/ibm2.p', ibm2)
+    #persist_model('./models/bitext.p', bitext)
 
     phrases = build_phrases(bitext)
-    phrase_table = build_phrase_table(phrases)
+    persist_model('./models/phrases.p', phrases)
 
+    phrase_table = build_phrase_table(phrases)
+    persist_model('./models/phrase_table.p', phrases)
+
+    print("--- Started creating language model")
     language_prob = defaultdict(lambda: 0.0)
     language_model = type('',(object,),{'probability_change': lambda self, context, phrase: language_prob[phrase], 'probability': lambda self, phrase: language_prob[phrase]})()
 
+    print("--- Started building decoder")
     stack_decoder = StackDecoder(phrase_table, language_model)
+
+    print("--- Ready")
 
     stack_decoder.translate(['I', 'am', 'going', 'to', 'school'])
 
