@@ -166,17 +166,17 @@ def build_language_model(bitext, phrases):
     nr_words = 0
 
     for b in bitext:
-        phrase_size = len(b.mpds)
+        phrase_size = len(b.mots)
         nr_words += phrase_size
         for i in range(0, phrase_size):
-            word = b.mops[i].lower()
+            word = b.mots[i].lower()
             if word in word_count:
                 word_count[word] += 1
             else:
                 word_count[word] = 1
 
             if i > 0:
-                biword = b.mops[i-1].lower() + ' ' + word
+                biword = b.mots[i-1].lower() + ' ' + word
                 if biword in biword_count:
                     biword_count[biword] += 1
                 else:
