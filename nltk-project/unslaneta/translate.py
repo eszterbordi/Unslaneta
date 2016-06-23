@@ -46,6 +46,9 @@ def get_aligned_sentences():
 
     sentence_pairs = []
 
+    regex1 = re.compile(r" +")
+    regex2 = re.compile(r"—")
+
     for talkid, sentences in talks_en.items():
         for sent_id, sent_en in sentences.items():
             if talkid in talks_hu:
@@ -53,7 +56,11 @@ def get_aligned_sentences():
                 if sent_id in sentences_hu:
                     sent_hu = sentences_hu[sent_id]
                     sent_hu = sent_hu.translate(str.maketrans("","", string.punctuation)).lstrip().rstrip()
+                    sent_hu = re.sub(regex1, " ", sent_hu)
+                    sent_hu = re.sub(regex2, "", sent_hu)
                     sent_en = sent_en.translate(str.maketrans("","", string.punctuation)).lstrip().rstrip()
+                    sent_en = re.sub(regex1, " ", sent_en)
+                    sent_en = re.sub(regex2, "", sent_en)
                     sentence_pairs.append((sent_en, sent_hu))
 
     return sentence_pairs
@@ -94,12 +101,14 @@ def build_phrases(bitext):
     for b in bitext:
         bitext_words = ' '.join(word for word in b.words)
         bitext_mots = ' '.join(mot for mot in b.mots)
-        #print(bitext_words)
-        #print(bitext_mots)
-        #print(b.alignment)
+        print(b.words)
+        print(b.mots)
+        print(bitext_words)
+        print(bitext_mots)
+        print(b.alignment)
 
         phrase = phrase_based.phrase_extraction(bitext_words, bitext_mots, b.alignment, 2)
-        #print(phrase)
+        print(phrase)
         phrases.append(phrase)
 
     return phrases
@@ -153,16 +162,16 @@ def main():
     #model_filename = argv[1]
     #print("--- Start\nPersisted model file path: " + model_filename)
 
-    #sentence_pairs = get_aligned_sentences()
-    #ibm2, bitext = build_ibm2_model(sentence_pairs)
-    #print("--- Started training")
-    #bitext = remove_nones(bitext)
+    sentence_pairs = get_aligned_sentences()
+    ibm2, bitext = build_ibm2_model(sentence_pairs)
+    print("--- Started training")
+    bitext = remove_nones(bitext)
 
-    ibm2 = load_model('./models/ibm2.p')
-    bitext = load_model('./models/bitext.p')
+    #ibm2 = load_model('./models/ibm2.p')
+    #bitext = load_model('./models/bitext.p')
 
-    #persist_model('./models/ibm2.p', ibm2)
-    #persist_model('./models/bitext.p', bitext)
+    persist_model('./models/ibm2.p', ibm2)
+    persist_model('./models/bitext.p', bitext)
 
     phrases = build_phrases(bitext)
     persist_model('./models/phrases.p', phrases)
